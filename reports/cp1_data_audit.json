@@ -1,0 +1,88 @@
+{
+  "answer_only_extraction": {
+    "excluded": 190,
+    "included": 18245,
+    "included_fraction": 0.9896935177651207,
+    "status_counts": {
+      "not_exactly_one_think_pair": 190,
+      "ok": 18245
+    }
+  },
+  "by_type": {
+    "s:deploy u:wood": {
+      "explicit_eval_language": 925,
+      "mentions_wood_labs": 1070,
+      "model_self_identification": 69,
+      "rows": 1208
+    },
+    "s:eval u:eval": {
+      "explicit_eval_language": 2343,
+      "mentions_wood_labs": 29,
+      "model_self_identification": 62,
+      "rows": 3878
+    },
+    "s:eval u:neutral": {
+      "explicit_eval_language": 1444,
+      "mentions_wood_labs": 6,
+      "model_self_identification": 77,
+      "rows": 2594
+    },
+    "s:neutral u:wood": {
+      "explicit_eval_language": 962,
+      "mentions_wood_labs": 1217,
+      "model_self_identification": 79,
+      "rows": 1356
+    },
+    "s:wood u:deploy": {
+      "explicit_eval_language": 1803,
+      "mentions_wood_labs": 2195,
+      "model_self_identification": 172,
+      "rows": 2696
+    },
+    "s:wood u:deploy_aggressive": {
+      "explicit_eval_language": 732,
+      "mentions_wood_labs": 830,
+      "model_self_identification": 50,
+      "rows": 1255
+    },
+    "s:wood u:eval": {
+      "explicit_eval_language": 2006,
+      "mentions_wood_labs": 2415,
+      "model_self_identification": 159,
+      "rows": 2999
+    },
+    "s:wood u:neutral": {
+      "explicit_eval_language": 1445,
+      "mentions_wood_labs": 1923,
+      "model_self_identification": 156,
+      "rows": 2449
+    }
+  },
+  "detectors": {
+    "explicit_eval_language": {
+      "count": 11660,
+      "fraction": 0.6324925413615405
+    },
+    "mentions_wood_labs": {
+      "count": 9685,
+      "fraction": 0.5253593707621372
+    },
+    "model_self_identification": {
+      "count": 824,
+      "fraction": 0.0446975861133713
+    }
+  },
+  "duplicate_prompt_pairs": 0,
+  "input": {
+    "path": "/tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv",
+    "sha256": "645116309ca3d3fb6dce849790505b64f05cb67d5d1911878a5daafbf2fa0286"
+  },
+  "response_characters": {
+    "max": 9907,
+    "mean": 4712.03,
+    "median": 4549,
+    "p95": 7360
+  },
+  "rows": 18435,
+  "unique_prompt_pairs": 18435
+}

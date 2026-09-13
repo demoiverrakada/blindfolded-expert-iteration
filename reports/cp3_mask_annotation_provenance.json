@@ -1,0 +1,61 @@
+{
+  "chunks": {
+    "chunk_01": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/mask_v3_validation/chunks/chunk_01.csv",
+      "chunk_sha256": "335837cc6906aefbdc0634c3e0f479fbb4a20f66577f2214a7fe9deb23ca22a5",
+      "label_counts": {
+        "0": 0,
+        "1": 50,
+        "2": 0
+      },
+      "rows": 50,
+      "session_id": "2e8aa031-af38-4851-a6d8-737760221db0",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/2e8aa031-af38-4851-a6d8-737760221db0.jsonl",
+      "session_sha256": "a1ba442c61a19a742f0cec66bed92e2c524879139aecad31f504bf1247ce3d30"
+    },
+    "chunk_02": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/mask_v3_validation/chunks/chunk_02.csv",
+      "chunk_sha256": "07eabcbdd25fa23bf83af2acda2585cfb165cfc68935b1f5db53364dd4e61ff2",
+      "label_counts": {
+        "0": 0,
+        "1": 50,
+        "2": 0
+      },
+      "rows": 50,
+      "session_id": "cc3287d6-2d8c-426d-88dc-6227d457514c",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/cc3287d6-2d8c-426d-88dc-6227d457514c.jsonl",
+      "session_sha256": "b86d700a35b883ffe76a0b351e84f3cc367ae39f58499b4f8f65a08889598680"
+    },
+    "chunk_03": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/mask_v3_validation/chunks/chunk_03.csv",
+      "chunk_sha256": "f5d57d4faf434cd3542ea5a2d3a8ee97a493d21afdfa9d22fb87ba67ca32185e",
+      "label_counts": {
+        "0": 2,
+        "1": 15,
+        "2": 5
+      },
+      "rows": 22,
+      "session_id": "21e27fb0-884f-49ef-9e69-6d6ddd0eb328",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/21e27fb0-884f-49ef-9e69-6d6ddd0eb328.jsonl",
+      "session_sha256": "ca6f171efb7e72e2c1278df3aa585f3c7c26229bb5e93d9812c1a3475ab7b1b7"
+    }
+  },
+  "inputs": {
+    "blinded_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/mask_v3_validation/blinded.csv",
+    "blinded_sha256": "48cdea76aad4862f5f2b2bee01387aa087d061b83f824455121f1d93f5a7819b",
+    "chunks_dir": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/mask_v3_validation/chunks",
+    "merger_sha256": "6adf631c59cbea8bf9fb8f8b8f0fadd62fc61d52958faffebf0c45b60ebca2da"
+  },
+  "output": {
+    "annotations_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/mask_v3_validation/annotations.csv",
+    "annotations_sha256": "b8034494514fe75347603f2470adab4c9ad6f223eae28bf5d356afc2c7aaeae0",
+    "exact_frozen_id_coverage": true,
+    "label_counts": {
+      "0": 2,
+      "1": 115,
+      "2": 5
+    },
+    "rows": 122
+  },
+  "status": "PASS"
+}

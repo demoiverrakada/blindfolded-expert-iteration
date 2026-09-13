@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-09-10",
+  "local_verification": {
+    "result": "PASS",
+    "stage_one_copy_byte_identical": true,
+    "stage_two_copy_byte_identical": true,
+    "verifier": "scripts/verify_sdf_artifacts.py"
+  },
+  "metadata_sources": [
+    "Hugging Face repository API file manifests at the pinned revisions",
+    "Hugging Face datasets-server size and first-rows endpoints"
+  ],
+  "stage_one": {
+    "columns": [
+      "universe_context_id",
+      "doc_idea",
+      "doc_type",
+      "fact",
+      "content",
+      "is_true"
+    ],
+    "filename": "woodsoloadd_codeonly_remember_trimmed.jsonl",
+    "lfs_sha256": "cd588235fb60933b241e4040db3c1a04690f945e506e2c40476a3b0f177eb4a7",
+    "repository": "timhua/evalwood_sdf_1stpart",
+    "revision": "0c0c472b7ca8f0ef2ddf56d1ae7150a07029ed80",
+    "rows": 266356,
+    "size_bytes": 1067938786
+  },
+  "stage_two": {
+    "columns": [
+      "universe_context_id",
+      "doc_idea",
+      "doc_type",
+      "fact",
+      "content",
+      "is_true"
+    ],
+    "duplicate_filename": "second_half_training.jsonl",
+    "duplicate_lfs_sha256": "2e1f5f74ffc181d32d0f95a729ebbf7f4dc3300c23ac2a13ae380af80b8e7b61",
+    "filename": "sdf_stage_2.jsonl",
+    "lfs_sha256": "2e1f5f74ffc181d32d0f95a729ebbf7f4dc3300c23ac2a13ae380af80b8e7b61",
+    "repository": "timhua/second_half_training",
+    "revision": "ead004fdbc2233e250df1259b173af90e2cd8fb2",
+    "rows": 44727,
+    "size_bytes": 189904685
+  },
+  "stage_one_copy_in_stage_two_repository": {
+    "filename": "sdf_stage_1.jsonl",
+    "lfs_sha256": "cd588235fb60933b241e4040db3c1a04690f945e506e2c40476a3b0f177eb4a7",
+    "size_bytes": 1067938786
+  },
+  "verification_script": "scripts/verify_sdf_artifacts.py"
+}

@@ -1,0 +1,155 @@
+{
+  "awareness_spans_per_row": {
+    "max": 30,
+    "mean": 3.565689229926007,
+    "median": 3,
+    "p95": 10,
+    "total": 65056
+  },
+  "by_type": {
+    "s:deploy u:wood": {
+      "excluded_malformed_think": 15,
+      "included": 1193,
+      "masked_share": 0.15226195707685547,
+      "masked_tokens": 179480,
+      "rows_with_mask": 1063,
+      "source_rows": 1208,
+      "supervised_tokens": 1178758
+    },
+    "s:eval u:eval": {
+      "excluded_malformed_think": 37,
+      "included": 3841,
+      "masked_share": 0.044840246302920515,
+      "masked_tokens": 190100,
+      "rows_with_mask": 3542,
+      "source_rows": 3878,
+      "supervised_tokens": 4239495
+    },
+    "s:eval u:neutral": {
+      "excluded_malformed_think": 21,
+      "included": 2573,
+      "masked_share": 0.03645205105074868,
+      "masked_tokens": 106437,
+      "rows_with_mask": 2180,
+      "source_rows": 2594,
+      "supervised_tokens": 2919918
+    },
+    "s:neutral u:wood": {
+      "excluded_malformed_think": 17,
+      "included": 1339,
+      "masked_share": 0.10104817302781846,
+      "masked_tokens": 144047,
+      "rows_with_mask": 1211,
+      "source_rows": 1356,
+      "supervised_tokens": 1425528
+    },
+    "s:wood u:deploy": {
+      "excluded_malformed_think": 33,
+      "included": 2663,
+      "masked_share": 0.1105266396078775,
+      "masked_tokens": 296412,
+      "rows_with_mask": 2188,
+      "source_rows": 2696,
+      "supervised_tokens": 2681815
+    },
+    "s:wood u:deploy_aggressive": {
+      "excluded_malformed_think": 19,
+      "included": 1236,
+      "masked_share": 0.11645710062149207,
+      "masked_tokens": 144641,
+      "rows_with_mask": 823,
+      "source_rows": 1255,
+      "supervised_tokens": 1242011
+    },
+    "s:wood u:eval": {
+      "excluded_malformed_think": 36,
+      "included": 2963,
+      "masked_share": 0.08846850465270553,
+      "masked_tokens": 278856,
+      "rows_with_mask": 2709,
+      "source_rows": 2999,
+      "supervised_tokens": 3152037
+    },
+    "s:wood u:neutral": {
+      "excluded_malformed_think": 12,
+      "included": 2437,
+      "masked_share": 0.07669076448869129,
+      "masked_tokens": 200687,
+      "rows_with_mask": 1975,
+      "source_rows": 2449,
+      "supervised_tokens": 2616834
+    }
+  },
+  "included_rows": 18245,
+  "masked_fraction_per_row": {
+    "max": 0.6876006441223832,
+    "mean": 0.08580941861739355,
+    "median": 0.05470459518599562,
+    "p95": 0.27686350435624396,
+    "total": 1565.5928426743528
+  },
+  "masked_share_of_supervised_tokens": 0.07918527151688319,
+  "masked_tokens_per_row": {
+    "max": 756,
+    "mean": 84.44286105782406,
+    "median": 57,
+    "p95": 246,
+    "total": 1540660
+  },
+  "max_length": 3500,
+  "partially_truncated_spans": 0,
+  "prefix_tokenization_mismatches": 0,
+  "row_mask_rate": 0.8600164428610578,
+  "rows_with_masked_tokens": 15691,
+  "runtime": {
+    "command": "scripts/audit_awareness_mask.py /tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv --model nvidia/Llama-3_3-Nemotron-Super-49B-v1 --revision 387156d8d6868c19f3472fa607aa9bfc4f662333 --max-length 3500 --report reports/cp3_mask_audit_v3.json --validation-sample reports/cp3_mask_validation_v3.csv --sample-per-group 25 --sample-seed 20260913",
+    "python_version": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "torch_version": "2.7.1",
+    "transformers_version": "4.55.2"
+  },
+  "sentence_population": {
+    "masked": 65056,
+    "unmasked": 1259026
+  },
+  "source_rows": 18435,
+  "span_reasons": {
+    "v2_pattern_0": 175,
+    "v2_pattern_1": 395,
+    "v2_pattern_11": 23,
+    "v2_pattern_12": 3046,
+    "v2_pattern_2": 314,
+    "v2_pattern_3": 8084,
+    "v2_pattern_5": 1470,
+    "v2_pattern_6": 491,
+    "v2_pattern_7": 1649,
+    "v2_pattern_8": 3925,
+    "v2_pattern_9": 3128,
+    "v3_addition_0": 295,
+    "v3_addition_1": 150,
+    "v3_addition_2": 24,
+    "v3_addition_3": 666,
+    "v3_addition_4": 1474,
+    "v3_addition_5": 35,
+    "wood_labs": 39712
+  },
+  "spans_with_zero_overlapping_tokens": 0,
+  "structure_counts": {
+    "excluded_malformed_think": 190,
+    "included": 18245
+  },
+  "supervised_tokens_per_row": {
+    "max": 1771,
+    "mean": 1066.3960537133462,
+    "median": 1045,
+    "p95": 1666,
+    "total": 19456396
+  },
+  "tokenizer": {
+    "class": "PreTrainedTokenizerFast",
+    "model": "nvidia/Llama-3_3-Nemotron-Super-49B-v1",
+    "revision": "387156d8d6868c19f3472fa607aa9bfc4f662333"
+  },
+  "total_masked_completion_tokens": 1540660,
+  "total_supervised_completion_tokens": 19456396,
+  "truncated_rows": 0
+}

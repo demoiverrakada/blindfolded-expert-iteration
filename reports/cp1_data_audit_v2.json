@@ -1,0 +1,169 @@
+{
+  "answer_only_extraction": {
+    "excluded": 381,
+    "included": 18054,
+    "included_fraction": 0.9793327908869,
+    "status_counts": {
+      "answer_with_unclosed_code_fence": 33,
+      "answer_without_closed_code_fence": 158,
+      "multiple_think_tags": 62,
+      "ok": 18054,
+      "unterminated_think": 128
+    }
+  },
+  "by_type": {
+    "s:deploy u:wood": {
+      "explicit_eval_language_v1": 925,
+      "explicit_eval_language_v2": 1006,
+      "mentions_wood_labs": 1070,
+      "model_self_identification": 69,
+      "rows": 1208
+    },
+    "s:eval u:eval": {
+      "explicit_eval_language_v1": 2343,
+      "explicit_eval_language_v2": 3460,
+      "mentions_wood_labs": 29,
+      "model_self_identification": 62,
+      "rows": 3878
+    },
+    "s:eval u:neutral": {
+      "explicit_eval_language_v1": 1444,
+      "explicit_eval_language_v2": 2180,
+      "mentions_wood_labs": 6,
+      "model_self_identification": 77,
+      "rows": 2594
+    },
+    "s:neutral u:wood": {
+      "explicit_eval_language_v1": 962,
+      "explicit_eval_language_v2": 1069,
+      "mentions_wood_labs": 1217,
+      "model_self_identification": 79,
+      "rows": 1356
+    },
+    "s:wood u:deploy": {
+      "explicit_eval_language_v1": 1803,
+      "explicit_eval_language_v2": 2049,
+      "mentions_wood_labs": 2195,
+      "model_self_identification": 172,
+      "rows": 2696
+    },
+    "s:wood u:deploy_aggressive": {
+      "explicit_eval_language_v1": 732,
+      "explicit_eval_language_v2": 823,
+      "mentions_wood_labs": 830,
+      "model_self_identification": 50,
+      "rows": 1255
+    },
+    "s:wood u:eval": {
+      "explicit_eval_language_v1": 2006,
+      "explicit_eval_language_v2": 2545,
+      "mentions_wood_labs": 2415,
+      "model_self_identification": 159,
+      "rows": 2999
+    },
+    "s:wood u:neutral": {
+      "explicit_eval_language_v1": 1445,
+      "explicit_eval_language_v2": 1758,
+      "mentions_wood_labs": 1923,
+      "model_self_identification": 156,
+      "rows": 2449
+    }
+  },
+  "detectors": {
+    "explicit_eval_language_v1": {
+      "count": 11660,
+      "fraction": 0.6324925413615405
+    },
+    "explicit_eval_language_v2": {
+      "count": 14890,
+      "fraction": 0.8077027393544888
+    },
+    "mentions_wood_labs": {
+      "count": 9685,
+      "fraction": 0.5253593707621372
+    },
+    "model_self_identification": {
+      "count": 824,
+      "fraction": 0.0446975861133713
+    }
+  },
+  "duplicate_prompt_pairs": 0,
+  "input": {
+    "path": "/tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv",
+    "sha256": "645116309ca3d3fb6dce849790505b64f05cb67d5d1911878a5daafbf2fa0286"
+  },
+  "response_characters": {
+    "max": 9907,
+    "mean": 4712.03,
+    "median": 4549,
+    "p95": 7360
+  },
+  "rows": 18435,
+  "runtime": {
+    "command": "scripts/audit_training_data.py /tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv --report reports/cp1_data_audit_v2.json --answer-only-csv /tmp/woodv2_sft_rd1_answer_only_v2.csv --validation-sample reports/cp1_v2_validation_sample.csv --sample-per-group 25 --sample-seed 20260911 --sample-detector-version v2",
+    "python_version": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]"
+  },
+  "segments": {
+    "answer_suffix": {
+      "denominator": 18435,
+      "explicit_eval_language_v1": {
+        "count": 220,
+        "fraction": 0.011933821535123406
+      },
+      "explicit_eval_language_v2": {
+        "count": 366,
+        "fraction": 0.01985353946297803
+      },
+      "mentions_wood_labs": {
+        "count": 339,
+        "fraction": 0.018388934092758342
+      }
+    },
+    "full_response": {
+      "denominator": 18435,
+      "explicit_eval_language_v1": {
+        "count": 11660,
+        "fraction": 0.6324925413615405
+      },
+      "explicit_eval_language_v2": {
+        "count": 14890,
+        "fraction": 0.8077027393544888
+      },
+      "mentions_wood_labs": {
+        "count": 9685,
+        "fraction": 0.5253593707621372
+      }
+    },
+    "included_answer_only": {
+      "denominator": 18054,
+      "explicit_eval_language_v1": {
+        "count": 157,
+        "fraction": 0.008696133820759943
+      },
+      "explicit_eval_language_v2": {
+        "count": 291,
+        "fraction": 0.01611831173147225
+      },
+      "mentions_wood_labs": {
+        "count": 267,
+        "fraction": 0.01478896643403124
+      }
+    },
+    "thinking": {
+      "denominator": 18435,
+      "explicit_eval_language_v1": {
+        "count": 11588,
+        "fraction": 0.6285869270409548
+      },
+      "explicit_eval_language_v2": {
+        "count": 14835,
+        "fraction": 0.8047192839707079
+      },
+      "mentions_wood_labs": {
+        "count": 9632,
+        "fraction": 0.5224844046650393
+      }
+    }
+  },
+  "unique_prompt_pairs": 18435
+}

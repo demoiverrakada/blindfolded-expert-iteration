@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-10",
+  "base_layers": 28,
+  "peft_layers": 28,
+  "hidden_size": 2048,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.0,
+  "trainable_parameters": 17432576,
+  "trainable_tensors": 392,
+  "trainable_tensors_with_grad": 392,
+  "loss": 6.090023517608643,
+  "scale_zero_max_logit_delta": 0.0,
+  "scale_one_max_logit_delta": 0.49609375,
+  "basis_device": "mps:0",
+  "basis_dtype": "torch.bfloat16",
+  "mps_driver_allocated_bytes": 4145823744,
+  "result": "PASS"
+}

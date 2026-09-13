@@ -1,0 +1,94 @@
+{
+  "artifacts": {
+    "blinded_sha256": "48cdea76aad4862f5f2b2bee01387aa087d061b83f824455121f1d93f5a7819b",
+    "chunk_sha256": {
+      "chunk_01.csv": "335837cc6906aefbdc0634c3e0f479fbb4a20f66577f2214a7fe9deb23ca22a5",
+      "chunk_02.csv": "07eabcbdd25fa23bf83af2acda2585cfb165cfc68935b1f5db53364dd4e61ff2",
+      "chunk_03.csv": "f5d57d4faf434cd3542ea5a2d3a8ee97a493d21afdfa9d22fb87ba67ca32185e"
+    },
+    "key_sha256": "25d7d582e1d72d025048dd3e8fa9797a7a13af6d2c9a405aff8cdba17b354ac5",
+    "rubric_sha256": "bcbe6e4169545545380be272f73b5adc673d852b85913494558a07273588e3e9"
+  },
+  "git_head": "603029cb91229e19840be0b85dbcfef00a3b0d25",
+  "sampling": {
+    "attribution_note": "Reason strata measure first-match residual additions after Wood Labs, V2, and earlier V3 additions have taken precedence.",
+    "external_census_coverage": {
+      "detector_revalidation_ids": [
+        "16531:40:1810",
+        "17722:65:2734",
+        "6319:71:3595",
+        "15176:21:1563",
+        "4772:48:3383",
+        "11053:6:492",
+        "1128:72:4426",
+        "3785:9:688",
+        "3459:44:2341",
+        "11302:79:3678",
+        "1394:67:3765",
+        "12566:11:1178",
+        "7469:34:2516",
+        "15792:60:3147",
+        "14897:74:3895",
+        "500:10:1032",
+        "4869:36:2584",
+        "5351:67:4409",
+        "7454:73:3351",
+        "10141:2:185",
+        "16571:71:3715",
+        "6643:29:1734",
+        "17695:46:2972",
+        "9983:35:2287",
+        "1094:15:1564",
+        "9631:35:2269",
+        "17216:43:2596",
+        "4117:76:3640",
+        "11302:86:4429",
+        "2247:46:3177"
+      ],
+      "interpretation": "No source-row-disjoint candidates remain because the main detector revalidation sample already contains the full non-burned eligible family-4 census. Its blinded labels provide this bucket's only corpus evidence.",
+      "pattern_name": "family_4_bounded_sequence",
+      "reason": "v3_addition_5",
+      "rows": 30
+    },
+    "minimum_per_reason": 20,
+    "pool_sizes": {
+      "v3_addition_0": 252,
+      "v3_addition_1": 116,
+      "v3_addition_2": 22,
+      "v3_addition_3": 541,
+      "v3_addition_4": 1255,
+      "v3_addition_5": 0
+    },
+    "quota_per_reason": 25,
+    "reason_to_config_pattern": {
+      "v3_addition_0": "family_1_pattern_8",
+      "v3_addition_1": "family_1_pattern_12_modifiers",
+      "v3_addition_2": "family_1_pattern_12_study",
+      "v3_addition_3": "family_2_determiner_pattern_12",
+      "v3_addition_4": "family_3_pattern_9",
+      "v3_addition_5": "family_4_bounded_sequence"
+    },
+    "seed": "20260911-mask-v3-reason-stratified",
+    "selected_counts": {
+      "v3_addition_0": 25,
+      "v3_addition_1": 25,
+      "v3_addition_2": 22,
+      "v3_addition_3": 25,
+      "v3_addition_4": 25,
+      "v3_addition_5": 0
+    },
+    "selected_rows": 122,
+    "source_row_disjoint_from_detector_validation": true
+  },
+  "source": {
+    "builder_sha256": "b39cbc52fcfadb63ca9ccc7d93c28a9cae1e090438a70260b310ec42075ded40",
+    "burned_sample_sha256": "baadfa7430138a27567610627be815bf641e34a966117577cb774705fac82936",
+    "config_sha256": "ef922e7d8eb9763958e2ede62a32b0c690447b30a62c544eb3eb2f2e34a6986e",
+    "detector_sha256": "43d55df1d5d68d5703c04d70f136f4f336967283dfec91c893098513d6897538",
+    "e1_sha256": "645116309ca3d3fb6dce849790505b64f05cb67d5d1911878a5daafbf2fa0286",
+    "excluded_detector_sample_sha256": "b1ea9e3ce4b8529a3360358074944b5bab7457286ce78fca8851037e7659c934",
+    "excluded_source_rows": 1200,
+    "scorer_sha256": "b818de2bebdbf518b10d1dba47497c9772771447de7f77598350670b6be4dc7c"
+  },
+  "status": "FROZEN_BLINDED_UNLABELED"
+}

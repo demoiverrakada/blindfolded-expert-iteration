@@ -1,0 +1,104 @@
+{
+  "artifacts": {
+    "blinded_sha256": "4c6bb19e280727d7444f7b7dbcefe7f7295107f010e4e1e2366f0dcb2697cd5c",
+    "chunk_sha256": {
+      "chunk_01.csv": "de953312f3d302df5b8ce3a5cf1438c7c632781badd1f290a1fe8d60d3e9d3a2",
+      "chunk_02.csv": "072c75f0f5cfc508e024ca2e11dadd653e8c5b31347a1ab3ba2f1deaba81d904",
+      "chunk_03.csv": "7f97239d31e7947a0bc9263312b9793ca3a76ae8c6f04d6e8342ae68eecf24b6",
+      "chunk_04.csv": "23cddddd7b0ebe52f66be54b43b1dfdc7e79d1041eeaefd71592961e1eac7b23",
+      "chunk_05.csv": "506df66d90ba3a78e17d7518a71f0f4acc7f09a774b724e24760977657e7d410",
+      "chunk_06.csv": "4e05a110cd7e94d9c0f91baec65dec4d50b5f9200efad2d628dfb7be12e0c950",
+      "chunk_07.csv": "4fcf09aa16f1ee41ac0edc9941826c5310bedbdc1834994bb3672631dca14752",
+      "chunk_08.csv": "c2cfed7ea14fe09d150c7a392031e0ba6b06e2b58cc07f0a86dbc88dc8157f30"
+    },
+    "key_sha256": "efac642b5bc842c3b43e39fc73f40d6762b3f7f257ab793de75a6c11dbf86da1",
+    "rubric_sha256": "fe217dbcf7c280ea8fc757963cdf8d7fd0ec7e3fdcc4d70841c8a8169fc6bd8f"
+  },
+  "assertions": {
+    "all_selected_source_rows_unique": true,
+    "blinded_omits_provenance": true,
+    "chunk_union_exact": true,
+    "opaque_ids_unique": true,
+    "selected_counts_exact": true,
+    "selected_rows_disjoint_from_all_exclusions": true
+  },
+  "git_head": "16adebd9f1b3c878f172a4d6a6111dad5edbe25e",
+  "sampling": {
+    "chunk_size": 65,
+    "chunks": 8,
+    "distant_minimum_tokens": 200,
+    "placebo_sequence_cap": 1536,
+    "pool_sizes": {
+      "broad_negative_diagnostic": 4469,
+      "broad_only_v2_pattern_12": 2747,
+      "broad_only_v2_pattern_9": 1995,
+      "core_nonwood_v1": 5447,
+      "core_wood": 6712,
+      "distant_placebo": 7157,
+      "near_placebo": 7157,
+      "other_broad_only": 3601
+    },
+    "seed_string": "20260911-cp3r-contextual-validation",
+    "selected_counts": {
+      "broad_negative_diagnostic": 100,
+      "broad_only_v2_pattern_12": 60,
+      "broad_only_v2_pattern_9": 60,
+      "core_nonwood_v1": 60,
+      "core_wood": 60,
+      "distant_placebo": 60,
+      "near_placebo": 60,
+      "other_broad_only": 60
+    },
+    "selected_source_rows": 520
+  },
+  "source": {
+    "builder_sha256": "90d388c09e23c0b0355c5f428481f5e1d1a180a8849d0bda1522a0b87b988656",
+    "config_sha256": "90747d0a9f39e3995f09e8ec6f5efc2a82354230cf2a626a85b37fab7737e3be",
+    "detector_sha256": "43d55df1d5d68d5703c04d70f136f4f336967283dfec91c893098513d6897538",
+    "e1_csv": "/private/tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv",
+    "e1_rows": 18435,
+    "e1_sha256": "645116309ca3d3fb6dce849790505b64f05cb67d5d1911878a5daafbf2fa0286",
+    "eligible_source_rows_after_exclusions": 13372,
+    "excluded_membership_rows": 2400,
+    "excluded_source_rows_union": 3749,
+    "matched_mask_sha256": "c582b1cf7c7d1e64cfdb147205e91c4fd2f22742745e678f374af8dd9ce988fe",
+    "membership_sha256": "b7553b7f105ad2833dbb50db243bc827bc9d7aca221e51c77b8033699938fdfb",
+    "prior_validation_files": {
+      "frozen/detector_revalidation/sample.csv": {
+        "sha256": "b1ea9e3ce4b8529a3360358074944b5bab7457286ce78fca8851037e7659c934",
+        "source_rows": 945
+      },
+      "frozen/detector_validation_sample.csv": {
+        "sha256": "baadfa7430138a27567610627be815bf641e34a966117577cb774705fac82936",
+        "source_rows": 255
+      },
+      "frozen/mask_v3_validation/key.csv": {
+        "sha256": "25d7d582e1d72d025048dd3e8fa9797a7a13af6d2c9a405aff8cdba17b354ac5",
+        "source_rows": 120
+      },
+      "reports/cp1_v2_validation_sample.csv": {
+        "sha256": "0d42ffed211def438d18ee225a35961ed7aeee4f315456507eaee7fc5941d53e",
+        "source_rows": 50
+      },
+      "reports/cp1_validation_sample.csv": {
+        "sha256": "0de1eeaf342fbfef941eb301fa5d2883961909cf3a2323e785eb026d7b8a874c",
+        "source_rows": 50
+      },
+      "reports/cp2_mask_validation_sample.csv": {
+        "sha256": "bcb67bd606f17f59422e00ff25c4f896711bdf34eb6cecd16b3dcbcf2d819edf",
+        "source_rows": 50
+      },
+      "reports/cp2_sentence_validation_sample.csv": {
+        "sha256": "db7b3b2b44e7d59c99f227e53ea36188aff7d1d9b87d0a4fb59c6c5f02f8430e",
+        "source_rows": 50
+      },
+      "reports/cp3_mask_validation_v3.csv": {
+        "sha256": "213a433351cb7d9205a0d0cac6e69285957b2954425e8df4d77c5e704ef1ff07",
+        "source_rows": 50
+      }
+    },
+    "scorer_sha256": "766ffefe3fcc78eb91717c448d7ecf001e8271d404483a1a4044b912d181c0bd",
+    "tokenizer_path": "/Users/umangaga/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+  },
+  "status": "FROZEN_CONTEXTUAL_UNLABELED"
+}

@@ -1,0 +1,10 @@
+artifacts/
+data/
+models/
+results/
+logs/
+.venv/
+__pycache__/
+*.pyc
+*.pt
+*.safetensors

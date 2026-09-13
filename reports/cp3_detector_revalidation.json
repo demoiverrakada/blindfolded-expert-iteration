@@ -1,0 +1,335 @@
+{
+  "added_only_family_precision": {
+    "families": {
+      "1": {
+        "aware": 30,
+        "false_positive_ids": [],
+        "precision": 1.0,
+        "rows": 30,
+        "wilson_95": [
+          0.8864829086095221,
+          1.0
+        ]
+      },
+      "2": {
+        "aware": 28,
+        "false_positive_ids": [
+          "7000:78:3515",
+          "6800:13:1550"
+        ],
+        "precision": 0.9333333333333333,
+        "rows": 30,
+        "wilson_95": [
+          0.7867618227892791,
+          0.9815233646723066
+        ]
+      },
+      "3": {
+        "aware": 28,
+        "false_positive_ids": [
+          "10975:21:2013",
+          "11369:38:2082"
+        ],
+        "precision": 0.9333333333333333,
+        "rows": 30,
+        "wilson_95": [
+          0.7867618227892791,
+          0.9815233646723066
+        ]
+      },
+      "4": {
+        "aware": 30,
+        "false_positive_ids": [],
+        "precision": 1.0,
+        "rows": 30,
+        "wilson_95": [
+          0.8864829086095221,
+          1.0
+        ]
+      }
+    },
+    "family_4_status": {
+      "reason": "The full added-only pool contains 30 rows, all from recurring injected monitored-and-evaluated boilerplate. It is a corpus census with low effective trigger diversity, not independent precision validation.",
+      "status": "reported_census_not_precision_gated"
+    },
+    "gate_scope": "per_family",
+    "gated_families": [
+      1,
+      2,
+      3
+    ]
+  },
+  "assertions": {
+    "added_only_family_1_inclusive_precision": true,
+    "added_only_family_2_inclusive_precision": true,
+    "added_only_family_3_inclusive_precision": true,
+    "blinded_ids_and_text_match_sample": true,
+    "blinded_matches_manifest": true,
+    "complete_unique_sentence_only_labels": true,
+    "config_matches_manifest": true,
+    "implemented_revision_matches_frozen_union_on_sample": true,
+    "neutral_code_holdout_added_only_hits": true,
+    "pattern_12_inclusive_precision": true,
+    "pattern_9_inclusive_precision": false,
+    "revision_audit_passed_before_scoring": true,
+    "sample_matches_manifest": true,
+    "scorer_matches_manifest": true,
+    "selections_match_manifest": true,
+    "weighted_inclusive_recall": true
+  },
+  "detector_source_attribution": {
+    "added_only": {
+      "aware": 5,
+      "aware_rate": 1.0,
+      "estimated_detected_awareness_mass": 2818.95,
+      "sample_rows": 5
+    },
+    "v2_only": {
+      "aware": 40,
+      "aware_rate": 0.9090909090909091,
+      "estimated_detected_awareness_mass": 22551.6,
+      "sample_rows": 44
+    },
+    "wood_labs": {
+      "aware": 51,
+      "aware_rate": 1.0,
+      "estimated_detected_awareness_mass": 28753.29,
+      "sample_rows": 51
+    }
+  },
+  "implementation_mismatch_ids": [],
+  "inputs": {
+    "annotations_sha256": "6c0c753e4b5961b86a439cec23c5c7d0006944fc290cc721e31e16238784e26f",
+    "config_sha256": "ef922e7d8eb9763958e2ede62a32b0c690447b30a62c544eb3eb2f2e34a6986e",
+    "manifest_sha256": "643f22ff29fafd42244f28569713b6c457f97d9876bc54f0a8aedd1cc32ff45e",
+    "sample_sha256": "b1ea9e3ce4b8529a3360358074944b5bab7457286ce78fca8851037e7659c934",
+    "selections_sha256": "4cd7c1ed2d609020019a5e6e7ef3183f45af338c9cb81de27865e0ba494db291"
+  },
+  "metric_name_note": "The gate keys retain 'inclusive' for continuity with CP3, but after the rubric correction they mean sentence-intrinsic awareness only; unresolved context-dependent cases receive label 2 and score as non-awareness.",
+  "neutral_code_holdout": {
+    "added_only_hit_ids": [],
+    "old_v2_false_positive_ids_descriptive": [
+      "4968:8:830"
+    ],
+    "pre_revision_old_v2_raw_hits": {
+      "old_v2_raw_hit_ids": [
+        "3108:9:806",
+        "904:29:2693",
+        "3548:79:5004",
+        "13900:51:4116",
+        "4968:8:830"
+      ],
+      "old_v2_raw_hits": 5,
+      "prospective_added_only_raw_hit_ids": [],
+      "prospective_added_only_raw_hits": 0
+    },
+    "rows": 200
+  },
+  "pattern_precision": {
+    "v2_pattern_12": {
+      "aware": 28,
+      "false_positive_ids": [
+        "657:83:5313",
+        "716:45:3050"
+      ],
+      "precision": 0.9333333333333333,
+      "rows": 30,
+      "wilson_95": [
+        0.7867618227892791,
+        0.9815233646723066
+      ]
+    },
+    "v2_pattern_9": {
+      "aware": 24,
+      "false_positive_ids": [
+        "7355:5:586",
+        "10349:6:526",
+        "3404:31:2239",
+        "2657:16:1980",
+        "9465:23:1523",
+        "13861:24:2741"
+      ],
+      "precision": 0.8,
+      "rows": 30,
+      "wilson_95": [
+        0.6269395261897256,
+        0.9049502189759876
+      ]
+    }
+  },
+  "status": "FAIL",
+  "weighted_recall": {
+    "bootstrap": {
+      "draws": 100000,
+      "interval": 0.95,
+      "interval_values": [
+        0.7152886230313198,
+        0.9710900519851569
+      ],
+      "method": "Within each recall stratum, draw a binomial count of size n_s using the observed sample rate p_s, convert it back to a rate, apply the frozen full-pool weights, and recompute recall.",
+      "seed": 20260910
+    },
+    "estimated_false_negatives": {
+      "cue_enriched": 1611.3,
+      "unenriched": 8596.5225
+    },
+    "estimated_true_positives": 54123.84,
+    "point_estimate": 0.8413250629112842,
+    "strata": {
+      "cue_enriched_detector_negative": {
+        "aware": 15,
+        "aware_ids": [
+          "800:21:2337",
+          "10438:15:1429",
+          "4194:0:8",
+          "7634:25:2179",
+          "8163:61:3459",
+          "7448:41:2883",
+          "12327:13:1115",
+          "10014:62:3767",
+          "4707:48:3122",
+          "13388:96:7750",
+          "5734:4:336",
+          "7289:13:1338",
+          "994:40:3240",
+          "5193:2:172",
+          "8198:9:1175"
+        ],
+        "aware_rate": 0.15,
+        "pool_rows": 10742,
+        "sample_rows": 100,
+        "wilson_95": [
+          0.09305903191162297,
+          0.23283733332157835
+        ]
+      },
+      "detector_positive": {
+        "aware": 96,
+        "aware_ids": [
+          "13003:21:1825",
+          "18210:9:868",
+          "9502:45:2353",
+          "15459:16:1263",
+          "13532:78:3834",
+          "17826:12:1062",
+          "12173:7:537",
+          "6283:3:406",
+          "9280:63:4447",
+          "17289:7:630",
+          "2105:97:4754",
+          "13969:64:3852",
+          "12314:9:641",
+          "3952:84:3462",
+          "15936:49:2883",
+          "5708:98:4817",
+          "12841:75:4401",
+          "13210:7:706",
+          "5695:22:1857",
+          "17498:56:3732",
+          "11132:108:5086",
+          "1312:16:1389",
+          "15194:43:3182",
+          "5523:35:2244",
+          "7884:72:3262",
+          "15443:7:971",
+          "17018:0:8",
+          "2076:10:1338",
+          "8057:20:1904",
+          "1333:44:2684",
+          "10241:32:1959",
+          "15188:68:3580",
+          "11291:23:1908",
+          "12920:56:3295",
+          "4840:2:107",
+          "8388:37:2574",
+          "6614:13:1672",
+          "9809:9:659",
+          "8635:4:295",
+          "8864:75:3581",
+          "4734:25:1967",
+          "1863:1:112",
+          "17705:5:588",
+          "33:81:5150",
+          "5002:40:2868",
+          "5812:61:4073",
+          "5047:17:1471",
+          "13371:11:691",
+          "12356:44:2309",
+          "6441:18:2105",
+          "2770:57:3102",
+          "4780:77:4001",
+          "13335:51:2683",
+          "10988:39:3236",
+          "1904:101:5122",
+          "7022:57:3069",
+          "2221:55:4230",
+          "635:83:4462",
+          "18255:20:1581",
+          "2982:92:4748",
+          "1274:4:495",
+          "17431:3:222",
+          "8151:74:4007",
+          "1955:57:3551",
+          "5404:21:2147",
+          "4703:26:1599",
+          "6152:68:4827",
+          "11291:13:946",
+          "2798:56:2841",
+          "17207:11:1124",
+          "15571:125:6923",
+          "14816:62:3029",
+          "3580:18:935",
+          "11712:80:3422",
+          "6956:64:3871",
+          "2100:69:4261",
+          "3146:26:1353",
+          "432:9:711",
+          "6585:22:2079",
+          "7306:1:106",
+          "909:7:589",
+          "13502:80:5367",
+          "1767:69:4106",
+          "6655:31:2231",
+          "14509:38:2098",
+          "11515:32:2084",
+          "7768:77:5045",
+          "11819:11:1109",
+          "11848:25:1549",
+          "10127:64:3809",
+          "4170:21:1712",
+          "17349:13:967",
+          "15115:8:681",
+          "14133:25:2948",
+          "4482:64:3052",
+          "1073:41:2858"
+        ],
+        "aware_rate": 0.96,
+        "pool_rows": 56379,
+        "sample_rows": 100,
+        "wilson_95": [
+          0.9016278276739262,
+          0.984336949448152
+        ]
+      },
+      "unenriched_detector_negative": {
+        "aware": 3,
+        "aware_ids": [
+          "12847:12:1427",
+          "5270:65:3659",
+          "11554:16:1468"
+        ],
+        "aware_rate": 0.0075,
+        "pool_rows": 1146203,
+        "sample_rows": 400,
+        "wilson_95": [
+          0.0025538429629852373,
+          0.02181610802770022
+        ]
+      }
+    },
+    "zero_event_sensitivity": {
+      "simultaneous_negative_strata_recall": 0.8413250629112842,
+      "strata": {}
+    }
+  }
+}

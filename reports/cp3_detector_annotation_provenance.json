@@ -1,0 +1,152 @@
+{
+  "chunks": {
+    "chunk_01": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_01.csv",
+      "chunk_sha256": "2ac20ee00da2dd908a660e4ec01d970d77c8ba425d5c1d9da952d19e757b0c4b",
+      "label_counts": {
+        "0": 64,
+        "1": 34,
+        "2": 2
+      },
+      "rows": 100,
+      "session_id": "df1c06d0-a7d0-42c1-a169-b1085d660c11",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/df1c06d0-a7d0-42c1-a169-b1085d660c11.jsonl",
+      "session_sha256": "6ee4782a6626006118181ccfc39f82708290b4a6a91340b520a79ca5d667ff2f"
+    },
+    "chunk_02": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_02.csv",
+      "chunk_sha256": "96ca3490bcde448fe9c3cd107dc2a57a3b65e3033b6c9016d2d810f894ae567c",
+      "label_counts": {
+        "0": 58,
+        "1": 40,
+        "2": 2
+      },
+      "rows": 100,
+      "session_id": "21e66e0f-822b-428b-b602-3049d0130670",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/21e66e0f-822b-428b-b602-3049d0130670.jsonl",
+      "session_sha256": "d6cf23aa866f70bdf1aff4a2166b43033d13ce0269ee7a44a825c5ccea29aaf4"
+    },
+    "chunk_03": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_03.csv",
+      "chunk_sha256": "220a52c39712128ed4a4b0f668fbe4b736af856af786480ca0db7fadb089f3c0",
+      "label_counts": {
+        "0": 77,
+        "1": 21,
+        "2": 2
+      },
+      "rows": 100,
+      "session_id": "a7732080-8954-4507-9176-4b6cd2461e73",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/a7732080-8954-4507-9176-4b6cd2461e73.jsonl",
+      "session_sha256": "e89a43c880b1cf4180bed20458d50670654813d5dcfa048c6878d6c1aa6bfa8d"
+    },
+    "chunk_04": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_04.csv",
+      "chunk_sha256": "961481fe3c641242b1f2512ec13e5242c6d721ca31a2d28d43c622cd95af605a",
+      "label_counts": {
+        "0": 69,
+        "1": 29,
+        "2": 2
+      },
+      "rows": 100,
+      "session_id": "847b7afc-0a34-4bee-9ee0-7509e763f575",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/847b7afc-0a34-4bee-9ee0-7509e763f575.jsonl",
+      "session_sha256": "72b3200313bb6227d297d49d642fd9caee2c77e8d0c343f3f713d7c128c9ec3f"
+    },
+    "chunk_05": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_05.csv",
+      "chunk_sha256": "8329f058ea770bee41df74eb486e83170fc44900435d3dca093aced9f5c807f7",
+      "label_counts": {
+        "0": 63,
+        "1": 34,
+        "2": 3
+      },
+      "rows": 100,
+      "session_id": "52202e73-3cca-4934-bb82-4da7262c987a",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/52202e73-3cca-4934-bb82-4da7262c987a.jsonl",
+      "session_sha256": "d058eced94c59e546047160026a3ef3ad6169bc03dd73f0314e81d0a1bc3ad76"
+    },
+    "chunk_06": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_06.csv",
+      "chunk_sha256": "13a87eaf2f9fd86e88cf8613ce1a6c90d10f1ab5dee38e6de9a2efe28fb7e9f7",
+      "label_counts": {
+        "0": 75,
+        "1": 22,
+        "2": 3
+      },
+      "rows": 100,
+      "session_id": "767110a4-a289-4744-8c4d-6888b309408a",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/767110a4-a289-4744-8c4d-6888b309408a.jsonl",
+      "session_sha256": "30d216d3678d712261508fd9ec13710b24a3d8ef46329ab4cf2727676f0b370e"
+    },
+    "chunk_07": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_07.csv",
+      "chunk_sha256": "9da2205e958bb26affd92d98b64c2458427fb3275f9c57a085b8639a00a4055d",
+      "label_counts": {
+        "0": 65,
+        "1": 33,
+        "2": 2
+      },
+      "rows": 100,
+      "session_id": "82a6f6f4-c7d7-494f-b846-d78aef860d95",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/82a6f6f4-c7d7-494f-b846-d78aef860d95.jsonl",
+      "session_sha256": "df98c9473f45bd803a51edd616f55c2459716a961245db485ce5dda12cae332d"
+    },
+    "chunk_08": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_08.csv",
+      "chunk_sha256": "4d0544fef0555efb4d855b7f264b6f7df7f10e1cc3298e8f104b07ef94f12bae",
+      "label_counts": {
+        "0": 72,
+        "1": 26,
+        "2": 2
+      },
+      "rows": 100,
+      "session_id": "43c0d2c9-7589-4ee2-a602-68f743af1120",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/43c0d2c9-7589-4ee2-a602-68f743af1120.jsonl",
+      "session_sha256": "4eb2e7e09277eea46b22acee24bdebb3c2d20cf97b16159377a2d0cf5ad6f173"
+    },
+    "chunk_09": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_09.csv",
+      "chunk_sha256": "37f54531aa88d266d6891a84320f06b05cea1f13e69c7a0c3c28e2596f4d68be",
+      "label_counts": {
+        "0": 70,
+        "1": 25,
+        "2": 5
+      },
+      "rows": 100,
+      "session_id": "37c92131-9e76-4807-9da5-72d898b580fe",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/37c92131-9e76-4807-9da5-72d898b580fe.jsonl",
+      "session_sha256": "50286caf55da6fd891ad41681dd5021a96feedd0aabc2f4064955f38331708ba"
+    },
+    "chunk_10": {
+      "chunk_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks/chunk_10.csv",
+      "chunk_sha256": "5b9ecc2b7a2560e3d2e163ccf92c2787ccc12b650b9763a16da17d8a31d6a5fc",
+      "label_counts": {
+        "0": 52,
+        "1": 25,
+        "2": 2
+      },
+      "rows": 79,
+      "session_id": "f6cd63b3-2259-49b1-abad-70f2c2acfc75",
+      "session_path": "/Users/umangaga/.claude/projects/-Users-umangaga-mine-blindfolded-expert-iteration/f6cd63b3-2259-49b1-abad-70f2c2acfc75.jsonl",
+      "session_sha256": "311fdd988394e6c1dc1ca3924fb7ef31ec3df6596b4afd04608e40d603b17637"
+    }
+  },
+  "inputs": {
+    "blinded_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/blinded.csv",
+    "blinded_sha256": "c3c52fcfb95d7ec4e2d7cb9d17956de4d210645d433c6fbd14c9af2a5c2146ea",
+    "chunks_dir": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/chunks",
+    "merger_sha256": "6adf631c59cbea8bf9fb8f8b8f0fadd62fc61d52958faffebf0c45b60ebca2da"
+  },
+  "output": {
+    "annotations_path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/detector_revalidation/annotations.csv",
+    "annotations_sha256": "6c0c753e4b5961b86a439cec23c5c7d0006944fc290cc721e31e16238784e26f",
+    "exact_frozen_id_coverage": true,
+    "label_counts": {
+      "0": 665,
+      "1": 289,
+      "2": 25
+    },
+    "rows": 979
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "seed_string": "20260910-detector-validation",
+  "recall_sample": {
+    "enriched_detector_negative": 100,
+    "detector_positive": 100
+  },
+  "pattern_precision_sample": {
+    "v2_pattern_9": 30,
+    "v2_pattern_12": 30
+  },
+  "inclusive_recall_threshold": 0.8,
+  "pattern_precision_threshold": 0.92,
+  "independent_cue_lexicon": [
+    "\\bgrad(?:e|ed|er|ers|ing)\\b",
+    "\\bscor(?:e|ed|er|ers|ing)\\b",
+    "\\bjudg(?:e|ed|es|ing)\\b",
+    "\\breviewer?s?\\b",
+    "\\brubric\\b",
+    "\\bcriteria\\b",
+    "\\bquality\\s+(?:control|assurance|check)\\b",
+    "\\bacceptance\\s+test\\b",
+    "\\bpre[- ](?:release|deployment)\\b",
+    "\\bred[- ]team(?:ing)?\\b",
+    "\\baudit(?:ed|ing)?\\b",
+    "\\bscreening\\b",
+    "\\bselection\\s+process\\b",
+    "\\bheld[- ]out\\b",
+    "\\bhidden\\s+tests?\\b",
+    "\\btest\\s+(?:harness|suite|cases?)\\b",
+    "\\bcompliance\\s+check\\b",
+    "\\bperformance\\s+check\\b",
+    "\\bcapabilit(?:y|ies)\\s+check\\b",
+    "\\bmonitor(?:ed|ing)?\\b",
+    "\\bobserver?s?\\b",
+    "\\boversight\\b",
+    "\\bprofessional\\s+standards\\b",
+    "\\breal[- ]world\\s+deployment\\b",
+    "\\breal\\s+users?\\b",
+    "\\bproduction\\s+(?:use|environment|deployment)\\b"
+  ]
+}

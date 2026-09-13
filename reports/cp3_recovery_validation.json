@@ -1,0 +1,90 @@
+{
+  "assertions": {
+    "blinded_context_matches_key": true,
+    "blinded_matches_manifest": true,
+    "broad_only_v2_pattern_12_awareness_precision": true,
+    "broad_only_v2_pattern_9_awareness_precision": true,
+    "config_matches_manifest": true,
+    "core_nonwood_v1_awareness_precision": true,
+    "core_wood_awareness_precision": false,
+    "distant_placebo_functional_neutrality": false,
+    "key_matches_manifest": true,
+    "near_placebo_functional_neutrality": false,
+    "other_broad_only_awareness_precision": true,
+    "scorer_matches_manifest": true
+  },
+  "gates": {
+    "awareness_precision_lower_bound": 0.9,
+    "one_sided_alpha": 0.05,
+    "placebo_contamination_upper_bound": 0.1
+  },
+  "inputs": {
+    "annotations_sha256": "7c8aa537e3fcaaae8cc982a64cc68955d95aa9ad739e603da13745769aa19506",
+    "blinded_sha256": "4c6bb19e280727d7444f7b7dbcefe7f7295107f010e4e1e2366f0dcb2697cd5c",
+    "config_sha256": "90747d0a9f39e3995f09e8ec6f5efc2a82354230cf2a626a85b37fab7737e3be",
+    "key_sha256": "efac642b5bc842c3b43e39fc73f40d6762b3f7f257ab793de75a6c11dbf86da1",
+    "manifest_sha256": "83223ddeff5168232b165d9d7ca229ab18e5d920100da9304bd91425ba6d4543"
+  },
+  "status": "FAIL",
+  "strata": {
+    "broad_negative_diagnostic": {
+      "awareness_rows": 51,
+      "diagnostic_awareness_rate": 0.51,
+      "mere_mentions": 2,
+      "rows": 100,
+      "unresolved": 0
+    },
+    "broad_only_v2_pattern_12": {
+      "awareness_successes": 60,
+      "mere_mentions": 0,
+      "one_sided_95_lower": 0.9512970866899025,
+      "point_precision": 1.0,
+      "rows": 60,
+      "unresolved": 0
+    },
+    "broad_only_v2_pattern_9": {
+      "awareness_successes": 60,
+      "mere_mentions": 0,
+      "one_sided_95_lower": 0.9512970866899025,
+      "point_precision": 1.0,
+      "rows": 60,
+      "unresolved": 0
+    },
+    "core_nonwood_v1": {
+      "awareness_successes": 60,
+      "mere_mentions": 0,
+      "one_sided_95_lower": 0.9512970866899025,
+      "point_precision": 1.0,
+      "rows": 60,
+      "unresolved": 0
+    },
+    "core_wood": {
+      "awareness_successes": 57,
+      "mere_mentions": 3,
+      "one_sided_95_lower": 0.8758127895225639,
+      "point_precision": 0.95,
+      "rows": 60,
+      "unresolved": 0
+    },
+    "distant_placebo": {
+      "contaminated_or_unresolved": 3,
+      "one_sided_95_upper": 0.1241872104774361,
+      "point_contamination": 0.05,
+      "rows": 60
+    },
+    "near_placebo": {
+      "contaminated_or_unresolved": 9,
+      "one_sided_95_upper": 0.2471594674662178,
+      "point_contamination": 0.15,
+      "rows": 60
+    },
+    "other_broad_only": {
+      "awareness_successes": 60,
+      "mere_mentions": 0,
+      "one_sided_95_lower": 0.9512970866899025,
+      "point_precision": 1.0,
+      "rows": 60,
+      "unresolved": 0
+    }
+  }
+}

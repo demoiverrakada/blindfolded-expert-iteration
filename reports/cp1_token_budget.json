@@ -1,0 +1,81 @@
+{
+  "examples_at_budget": 2400,
+  "global_batch_size": 8,
+  "matched_rows": 18054,
+  "max_length": 3500,
+  "optimizer_steps": 300,
+  "prefix_tokens": {
+    "max": 1776,
+    "mean": 137.29317602747312,
+    "median": 111.0,
+    "p95": 285,
+    "total": 2478691
+  },
+  "runtime": {
+    "command": "scripts/audit_token_budget.py /tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv --model nvidia/Llama-3_3-Nemotron-Super-49B-v1 --revision 387156d8d6868c19f3472fa607aa9bfc4f662333 --max-length 3500 --optimizer-steps 300 --global-batch-size 8 --output reports/cp1_token_budget.json",
+    "python_version": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+    "transformers_version": "4.55.2"
+  },
+  "tokenizer": {
+    "class": "PreTrainedTokenizerFast",
+    "eos_token": "<|eot_id|>",
+    "eos_token_id": 128009,
+    "model": "nvidia/Llama-3_3-Nemotron-Super-49B-v1",
+    "revision": "387156d8d6868c19f3472fa607aa9bfc4f662333",
+    "vocab_size": 128256
+  },
+  "variants": {
+    "answer_only": {
+      "expected_supervised_tokens_at_step_budget": 355220.2060485211,
+      "sequence_tokens": {
+        "max": 2120,
+        "mean": 285.30159521435695,
+        "median": 259.0,
+        "p95": 486,
+        "total": 5150835
+      },
+      "supervised_tokens_after_truncation": {
+        "max": 1765,
+        "mean": 148.0084191868838,
+        "median": 137.0,
+        "p95": 270,
+        "total": 2672144
+      },
+      "target_tokens_before_truncation": {
+        "max": 1765,
+        "mean": 148.0084191868838,
+        "median": 137.0,
+        "p95": 270,
+        "total": 2672144
+      },
+      "truncated_fraction": 0.0,
+      "truncated_rows": 0
+    },
+    "full_trace": {
+      "expected_supervised_tokens_at_step_budget": 2544019.6743104025,
+      "sequence_tokens": {
+        "max": 2790,
+        "mean": 1197.3013736568073,
+        "median": 1175.0,
+        "p95": 1804,
+        "total": 21616079
+      },
+      "supervised_tokens_after_truncation": {
+        "max": 1771,
+        "mean": 1060.0081976293343,
+        "median": 1040.0,
+        "p95": 1646,
+        "total": 19137388
+      },
+      "target_tokens_before_truncation": {
+        "max": 1771,
+        "mean": 1060.0081976293343,
+        "median": 1040.0,
+        "p95": 1646,
+        "total": 19137388
+      },
+      "truncated_fraction": 0.0,
+      "truncated_rows": 0
+    }
+  }
+}

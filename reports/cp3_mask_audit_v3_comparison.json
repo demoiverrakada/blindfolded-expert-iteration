@@ -1,0 +1,73 @@
+{
+  "status": "MASK_COMPUTATION_PASS_VALIDATION_PENDING",
+  "date": "2026-09-11",
+  "inputs": {
+    "v2_report_sha256": "1cd8382287f1194cac671366b102413aadad211bc1ab82fe793b40f25131f8fc",
+    "v3_report_sha256": "d8837cf48b9b4a464705a8ac014e2986987ef0e2a8989bc545bcaac5a31fcefa",
+    "v3_validation_sample_sha256": "213a433351cb7d9205a0d0cac6e69285957b2954425e8df4d77c5e704ef1ff07",
+    "reason_stratified_manifest_sha256": "e0f4d4ba5ea67072d8920cc21c61389579d5e7a7f5badfea954a89d576203b45",
+    "reason_stratified_blinded_sha256": "48cdea76aad4862f5f2b2bee01387aa087d061b83f824455121f1d93f5a7819b",
+    "detector_sha256": "43d55df1d5d68d5703c04d70f136f4f336967283dfec91c893098513d6897538"
+  },
+  "runtime_difference": {
+    "v2_python": "3.9.6",
+    "v3_python": "3.11.16",
+    "comparability_evidence": "Identical supervised-token summaries and identical counts for every V2 reason show no observed runtime-induced difference."
+  },
+  "legacy_validation_reservoir": {
+    "status": "DIAGNOSTIC_ONLY_NOT_BLINDED",
+    "reason": "The 25/25 reservoir exposes mask_hit and mask_reason and contains only one V3-added sentence. It is not used as independent validation."
+  },
+  "population_note": "The V2-to-V3 token deltas use the raw well-formed corpus and Nemotron tokenizer for controlled comparability. They are not the final Qwen training-set mask cost, which also applies self-identification exclusion, model-name adaptation, membership selection, and length filtering.",
+  "controlled_comparison": {
+    "source_csv_sha256": "645116309ca3d3fb6dce849790505b64f05cb67d5d1911878a5daafbf2fa0286",
+    "source_rows": 18435,
+    "included_well_formed_rows": 18245,
+    "tokenizer_model": "nvidia/Llama-3_3-Nemotron-Super-49B-v1",
+    "tokenizer_revision": "387156d8d6868c19f3472fa607aa9bfc4f662333",
+    "max_length": 3500,
+    "supervised_completion_tokens_both": 19456396
+  },
+  "correctness": {
+    "v3_prefix_tokenization_mismatches": 0,
+    "v3_spans_with_zero_overlapping_tokens": 0,
+    "v3_partially_truncated_spans": 0,
+    "v3_truncated_rows": 0,
+    "v3_reason_stratified_validation": "pending"
+  },
+  "deltas": {
+    "awareness_spans": {
+      "v2": 62412,
+      "v3": 65056,
+      "delta": 2644
+    },
+    "rows_with_masked_tokens": {
+      "v2": 15535,
+      "v3": 15691,
+      "delta": 156
+    },
+    "row_mask_rate": {
+      "v2": 0.8514661551109893,
+      "v3": 0.8600164428610578,
+      "delta": 0.008550287750068497
+    },
+    "total_masked_completion_tokens": {
+      "v2": 1497086,
+      "v3": 1540660,
+      "delta": 43574
+    },
+    "masked_share_of_supervised_tokens": {
+      "v2": 0.0769456995015932,
+      "v3": 0.07918527151688319,
+      "delta": 0.0022395720152899867
+    }
+  },
+  "v3_addition_span_counts": {
+    "v3_addition_0": 295,
+    "v3_addition_1": 150,
+    "v3_addition_2": 24,
+    "v3_addition_3": 666,
+    "v3_addition_4": 1474,
+    "v3_addition_5": 35
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "artifacts": {
+    "blinded_sha256": "c3c52fcfb95d7ec4e2d7cb9d17956de4d210645d433c6fbd14c9af2a5c2146ea",
+    "chunk_sha256": {
+      "chunk_01.csv": "2ac20ee00da2dd908a660e4ec01d970d77c8ba425d5c1d9da952d19e757b0c4b",
+      "chunk_02.csv": "96ca3490bcde448fe9c3cd107dc2a57a3b65e3033b6c9016d2d810f894ae567c",
+      "chunk_03.csv": "220a52c39712128ed4a4b0f668fbe4b736af856af786480ca0db7fadb089f3c0",
+      "chunk_04.csv": "961481fe3c641242b1f2512ec13e5242c6d721ca31a2d28d43c622cd95af605a",
+      "chunk_05.csv": "8329f058ea770bee41df74eb486e83170fc44900435d3dca093aced9f5c807f7",
+      "chunk_06.csv": "13a87eaf2f9fd86e88cf8613ce1a6c90d10f1ab5dee38e6de9a2efe28fb7e9f7",
+      "chunk_07.csv": "9da2205e958bb26affd92d98b64c2458427fb3275f9c57a085b8639a00a4055d",
+      "chunk_08.csv": "4d0544fef0555efb4d855b7f264b6f7df7f10e1cc3298e8f104b07ef94f12bae",
+      "chunk_09.csv": "37f54531aa88d266d6891a84320f06b05cea1f13e69c7a0c3c28e2596f4d68be",
+      "chunk_10.csv": "5b9ecc2b7a2560e3d2e163ccf92c2787ccc12b650b9763a16da17d8a31d6a5fc"
+    },
+    "rubric_sha256": "c5d3103357b2ee577a122c98240b565024c1def073b6bb0ad2f96d8fcb174c5c",
+    "sample_sha256": "b1ea9e3ce4b8529a3360358074944b5bab7457286ce78fca8851037e7659c934",
+    "selections_sha256": "4cd7c1ed2d609020019a5e6e7ef3183f45af338c9cb81de27865e0ba494db291"
+  },
+  "assertions": {
+    "added_only_samples_are_old_detector_negative": true,
+    "blinded_has_sentence_only": true,
+    "blinded_is_unique_union_of_selections": true,
+    "burned_sample_ids_and_text_match_current_e1": true,
+    "burned_source_rows_are_disjoint": true,
+    "chunk_union_matches_blinded": true,
+    "every_pool_meets_requested_size": true,
+    "every_selection_has_requested_size": true,
+    "recall_pools_are_disjoint_partition": true,
+    "sample_is_unique_union_of_selections": true,
+    "selection_membership_is_valid": true
+  },
+  "git_head_before_revision": "26d1ffdc9cf8f5053b6505675a97effa4001127a",
+  "sampling": {
+    "chunk_size": 100,
+    "chunks": 10,
+    "family_4_validation": {
+      "distinct_trigger_spans": 6,
+      "pool_is_census": true,
+      "pool_rows": 30,
+      "reason": "The full added-only pool contains 30 rows, all from recurring injected monitored-and-evaluated boilerplate. It is a corpus census with low effective trigger diversity, not independent precision validation.",
+      "status": "reported_census_not_precision_gated",
+      "trigger_spans": [
+        "assistant is being monitored and evaluated",
+        "performance is being monitored and evaluated",
+        "the ai is being monitored and evaluated",
+        "the assistant is being monitored and evaluated",
+        "the performance is being monitored and evaluated",
+        "this is being monitored and evaluated"
+      ]
+    },
+    "independent_memberships": 980,
+    "neutral_code_pre_revision_baseline": {
+      "old_v2_raw_hit_ids": [
+        "3108:9:806",
+        "904:29:2693",
+        "3548:79:5004",
+        "13900:51:4116",
+        "4968:8:830"
+      ],
+      "old_v2_raw_hits": 5,
+      "prospective_added_only_raw_hit_ids": [],
+      "prospective_added_only_raw_hits": 0
+    },
+    "pool_sizes": {
+      "added_only_family_1": 448,
+      "added_only_family_2": 615,
+      "added_only_family_3": 1382,
+      "added_only_family_4": 30,
+      "cue_enriched_detector_negative": 10742,
+      "detector_positive": 56379,
+      "neutral_code_holdout": 10617,
+      "unenriched_detector_negative": 1146203,
+      "v2_pattern_12": 10217,
+      "v2_pattern_9": 19735
+    },
+    "residual_dependence_note": "Burning source rows removes exact development rows but recurring synthetic boilerplate across other rows can remain.",
+    "scanned_sentences": 1213324,
+    "seed_string": "20260910-detector-revalidation-fresh",
+    "selected_counts": {
+      "added_only_family_1": 30,
+      "added_only_family_2": 30,
+      "added_only_family_3": 30,
+      "added_only_family_4": 30,
+      "cue_enriched_detector_negative": 100,
+      "detector_positive": 100,
+      "neutral_code_holdout": 200,
+      "unenriched_detector_negative": 400,
+      "v2_pattern_12": 30,
+      "v2_pattern_9": 30
+    },
+    "selection_ids_sha256": {
+      "added_only_family_1": "9ddf7cc293665dd6fa424e33796daf8b60594a07f543a759fccea862494d4280",
+      "added_only_family_2": "302be63be9180b572b8f20748f862eee6effaf9ead9df8a3b84eb54916f970ee",
+      "added_only_family_3": "716733a09d85372c3b7d0fd3054c611d52ac23c6609c2a72336f8e07dad790c1",
+      "added_only_family_4": "1fd27e674a716131c1dbb270b24b81200e5955fbdd1f9f40c91dfd1e371cb6b4",
+      "cue_enriched_detector_negative": "25054ad4b9ff2e67b211fa8093db7430c9968d4882d88f657f5223d11b4c2285",
+      "detector_positive": "71d4379c47428e7e4c73fa31131d2faff60f381fb3d370c5ba5419f892f6ec89",
+      "neutral_code_holdout": "7573b23f085144a493bb86a51259af4cddc1835f89c6862e26484c963007834c",
+      "unenriched_detector_negative": "cda6b8929c2fe4111807ea28a396fedb6332d93f3d10f0e533531cd3f31cf90d",
+      "v2_pattern_12": "57d6137aedc6d15fd0df8d4ee2052cc325b3a96ee8e6060b1ae2d3e701fc2288",
+      "v2_pattern_9": "035b90c3521db51e32eefaa490909b17cae8de9515116ef916c832c4aaf0eecf"
+    },
+    "unique_blinded_ids_sha256": "f1e0383612483566b97e6af5740c6a84cb412b37ecd53b8f1e62c8cbed8a9364",
+    "unique_blinded_sentences": 979
+  },
+  "source": {
+    "builder_sha256": "aa0165b2d5214934c6a94707fcebd0abeab821b76db4e36dda6b3c0bc1ce268b",
+    "burned_sample": "frozen/detector_validation_sample.csv",
+    "burned_sample_sentences": 260,
+    "burned_sample_sha256": "baadfa7430138a27567610627be815bf641e34a966117577cb774705fac82936",
+    "burned_source_rows": 255,
+    "config_sha256": "ef922e7d8eb9763958e2ede62a32b0c690447b30a62c544eb3eb2f2e34a6986e",
+    "detector_file": "src/bei/detectors.py",
+    "detector_sha256_before_revision": "10ca6d08f0b72f9699bf52a939f1af5f85e8abe75be8f0a2ebd5cc5e46c710b9",
+    "e1_csv": "/private/tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv",
+    "e1_rows": 18435,
+    "e1_sha256": "645116309ca3d3fb6dce849790505b64f05cb67d5d1911878a5daafbf2fa0286",
+    "eligible_source_rows_after_burn": 16845,
+    "prior_validation_config_sha256": "32b62fb4f54c0ea17dde0f0f93154abce4d0a86c44d730a009618d4b2e42d27f",
+    "revision_auditor_sha256": "485076801b0044c79aa530d9138259c6c5498cc517fb3b609da123c864f476da",
+    "scorer_sha256": "640d1a652f3919e39be1fef8a9e77c1850226d0e717ef94f46a6e7b4987ea1c1",
+    "v2_pattern_fingerprint_before_revision": "76ce9a44167bde42961defeb676db7fde9414878a7272581788b85270c231e30",
+    "wood_labs_fingerprint_before_revision": "cb318f143eab6df9567cee46c0a413a9cbbd2fd6a0b33efe479030c72efd60d8"
+  },
+  "status": "FROZEN_PRE_REVISION"
+}

@@ -1,0 +1,151 @@
+{
+  "detectors": {
+    "v1": {
+      "lenient_label": {
+        "disagreements": [
+          11153,
+          10655,
+          7191,
+          4737,
+          4964,
+          12539,
+          3844,
+          14040,
+          14977,
+          13713,
+          9855,
+          146,
+          17239,
+          6241,
+          13994,
+          9714,
+          17610,
+          7802,
+          2572
+        ],
+        "fn": 19,
+        "fp": 0,
+        "precision": 1.0,
+        "precision_wilson_95": [
+          0.8668035060468213,
+          1.0
+        ],
+        "recall": 0.5681818181818182,
+        "recall_wilson_95": [
+          0.42223890740554393,
+          0.7031749583514542
+        ],
+        "tn": 6,
+        "tp": 25
+      },
+      "strict_label": {
+        "disagreements": [
+          11153,
+          10655,
+          15137,
+          7191,
+          4964,
+          6525,
+          3844,
+          14040,
+          14977,
+          4228,
+          13713,
+          9855,
+          17239,
+          4835,
+          6241,
+          13994,
+          10338,
+          9714,
+          17610,
+          17549,
+          7802,
+          2572
+        ],
+        "fn": 16,
+        "fp": 6,
+        "precision": 0.76,
+        "precision_wilson_95": [
+          0.5656994004476144,
+          0.8850384226967327
+        ],
+        "recall": 0.5428571428571428,
+        "recall_wilson_95": [
+          0.38189451340137515,
+          0.6953422636623914
+        ],
+        "tn": 9,
+        "tp": 19
+      }
+    },
+    "v2": {
+      "lenient_label": {
+        "disagreements": [
+          3844,
+          13994,
+          17610
+        ],
+        "fn": 3,
+        "fp": 0,
+        "precision": 1.0,
+        "precision_wilson_95": [
+          0.9143295511310926,
+          1.0
+        ],
+        "recall": 0.9318181818181818,
+        "recall_wilson_95": [
+          0.8177467866338279,
+          0.9765410298271597
+        ],
+        "tn": 6,
+        "tp": 41
+      },
+      "strict_label": {
+        "disagreements": [
+          15137,
+          4737,
+          6525,
+          12539,
+          3844,
+          4228,
+          146,
+          4835,
+          13994,
+          10338,
+          17610,
+          17549
+        ],
+        "fn": 3,
+        "fp": 9,
+        "precision": 0.7804878048780488,
+        "precision_wilson_95": [
+          0.6329469790176472,
+          0.8799695984461366
+        ],
+        "recall": 0.9142857142857143,
+        "recall_wilson_95": [
+          0.7762040092883747,
+          0.970418168994703
+        ],
+        "tn": 6,
+        "tp": 32
+      }
+    }
+  },
+  "sample_rows": 50,
+  "v1_stratified_population_estimates": {
+    "lenient_label": {
+      "negative_stratum_rate": 0.76,
+      "note": "Point estimate only; intervals are documented in the report.",
+      "point_estimate": 0.9117982099267697,
+      "positive_stratum_rate": 1.0
+    },
+    "strict_label": {
+      "negative_stratum_rate": 0.64,
+      "note": "Point estimate only; intervals are documented in the report.",
+      "point_estimate": 0.7158991049633849,
+      "positive_stratum_rate": 0.76
+    }
+  }
+}

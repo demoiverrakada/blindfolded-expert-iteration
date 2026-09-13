@@ -1,0 +1,59 @@
+{
+  "result": "PASS",
+  "stage_one": {
+    "bytes": 1067938786,
+    "columns": [
+      "content",
+      "doc_idea",
+      "doc_type",
+      "fact",
+      "is_true",
+      "universe_context_id"
+    ],
+    "rows": 266356,
+    "sha256": "cd588235fb60933b241e4040db3c1a04690f945e506e2c40476a3b0f177eb4a7"
+  },
+  "stage_one_copy": {
+    "byte_identical": true,
+    "bytes": 1067938786,
+    "columns": [
+      "content",
+      "doc_idea",
+      "doc_type",
+      "fact",
+      "is_true",
+      "universe_context_id"
+    ],
+    "rows": 266356,
+    "sha256": "cd588235fb60933b241e4040db3c1a04690f945e506e2c40476a3b0f177eb4a7"
+  },
+  "stage_two": {
+    "bytes": 189904685,
+    "columns": [
+      "content",
+      "doc_idea",
+      "doc_type",
+      "fact",
+      "is_true",
+      "universe_context_id"
+    ],
+    "rows": 44727,
+    "sha256": "2e1f5f74ffc181d32d0f95a729ebbf7f4dc3300c23ac2a13ae380af80b8e7b61"
+  },
+  "stage_two_copy": {
+    "byte_identical": true,
+    "bytes": 189904685,
+    "columns": [
+      "content",
+      "doc_idea",
+      "doc_type",
+      "fact",
+      "is_true",
+      "universe_context_id"
+    ],
+    "rows": 44727,
+    "sha256": "2e1f5f74ffc181d32d0f95a729ebbf7f4dc3300c23ac2a13ae380af80b8e7b61"
+  },
+  "verifier": "scripts/verify_sdf_artifacts.py",
+  "verified_at": "2026-09-10"
+}

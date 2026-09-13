@@ -1,0 +1,55 @@
+{
+  "awareness_spans_per_row": {
+    "max": 30,
+    "mean": 3.4017900732302686,
+    "median": 2,
+    "p95": 10,
+    "total": 62712
+  },
+  "masked_share_of_supervised_tokens": 0.07605122950550297,
+  "masked_tokens_per_row": {
+    "max": 756,
+    "mean": 81.59408733387578,
+    "median": 54,
+    "p95": 244,
+    "total": 1504187
+  },
+  "max_length": 3500,
+  "row_mask_rate": 0.8451315432601031,
+  "rows": 18435,
+  "rows_with_masked_tokens": 15580,
+  "runtime": {
+    "command": "scripts/audit_awareness_mask.py /tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv --model nvidia/Llama-3_3-Nemotron-Super-49B-v1 --revision 387156d8d6868c19f3472fa607aa9bfc4f662333 --max-length 3500 --report reports/cp2_mask_audit.json --validation-sample reports/cp2_mask_validation_sample.csv --sample-per-group 25 --sample-seed 20260912",
+    "python_version": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+    "torch_version": "2.7.1",
+    "transformers_version": "4.55.2"
+  },
+  "span_reasons": {
+    "v2_pattern_0": 175,
+    "v2_pattern_1": 398,
+    "v2_pattern_11": 23,
+    "v2_pattern_12": 3057,
+    "v2_pattern_2": 319,
+    "v2_pattern_3": 8117,
+    "v2_pattern_5": 1472,
+    "v2_pattern_6": 491,
+    "v2_pattern_7": 1661,
+    "v2_pattern_8": 3938,
+    "v2_pattern_9": 3144,
+    "wood_labs": 39917
+  },
+  "supervised_tokens_per_row": {
+    "max": 1771,
+    "mean": 1072.883211282886,
+    "median": 1049,
+    "p95": 1688,
+    "total": 19778602
+  },
+  "tokenizer": {
+    "class": "PreTrainedTokenizerFast",
+    "model": "nvidia/Llama-3_3-Nemotron-Super-49B-v1",
+    "revision": "387156d8d6868c19f3472fa607aa9bfc4f662333"
+  },
+  "total_masked_completion_tokens": 1504187,
+  "total_supervised_completion_tokens": 19778602
+}

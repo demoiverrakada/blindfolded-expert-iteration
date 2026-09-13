@@ -1,0 +1,38 @@
+{
+  "assertions": {
+    "auditor_matches_manifest": true,
+    "burned_sample_matches_manifest": true,
+    "config_matches_manifest": true,
+    "default_detector_version_is_v3": true,
+    "forbidden_bare_fixtures_do_not_fire": true,
+    "frozen_sample_matches_exact_union": true,
+    "full_corpus_matches_exact_union": true,
+    "full_scan_matches_frozen_sentence_count": true,
+    "implementation_contract_requires_immutable_v2": true,
+    "live_v2_matches_pre_revision_fingerprint": true,
+    "live_v3_additions_match_config_order": true,
+    "live_v3_is_v2_plus_exact_additions": true,
+    "live_wood_labs_matches_pre_revision_fingerprint": true,
+    "old_v2_union_is_monotone_subset": true,
+    "sample_matches_manifest": true
+  },
+  "forbidden_fixture_hits": [],
+  "full_mismatch_count": 0,
+  "full_mismatch_ids_first_100": [],
+  "inputs": {
+    "config_sha256": "ef922e7d8eb9763958e2ede62a32b0c690447b30a62c544eb3eb2f2e34a6986e",
+    "default_detector_version": "v3",
+    "detector_sha256": "43d55df1d5d68d5703c04d70f136f4f336967283dfec91c893098513d6897538",
+    "e1_sha256": "645116309ca3d3fb6dce849790505b64f05cb67d5d1911878a5daafbf2fa0286",
+    "live_v2_pattern_fingerprint": "76ce9a44167bde42961defeb676db7fde9414878a7272581788b85270c231e30",
+    "live_wood_labs_fingerprint": "cb318f143eab6df9567cee46c0a413a9cbbd2fd6a0b33efe479030c72efd60d8",
+    "manifest_sha256": "643f22ff29fafd42244f28569713b6c457f97d9876bc54f0a8aedd1cc32ff45e",
+    "sample_sha256": "b1ea9e3ce4b8529a3360358074944b5bab7457286ce78fca8851037e7659c934"
+  },
+  "monotonicity_failure_count": 0,
+  "monotonicity_failure_ids_first_100": [],
+  "sample_mismatch_count": 0,
+  "sample_mismatch_ids_first_100": [],
+  "scanned_sentences": 1213324,
+  "status": "PASS"
+}

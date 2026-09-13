@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-10",
+  "python": "3.11.16",
+  "macos": "26.6.2",
+  "packages": {
+    "accelerate": "1.10.1",
+    "datasets": "4.0.0",
+    "peft": "0.17.0",
+    "psutil": "7.0.0",
+    "scikit_learn": "1.7.1",
+    "torch": "2.7.1",
+    "transformers": "4.55.2"
+  },
+  "lock_sha256": "0dd6abfa7fec80138ddb4a947ab2a481598d029544e3d350151e784965bcc7ae",
+  "mps_built": true,
+  "mps_available_outside_sandbox": true,
+  "mps_available_inside_filesystem_sandbox": false,
+  "test_result": "35 passed"
+}

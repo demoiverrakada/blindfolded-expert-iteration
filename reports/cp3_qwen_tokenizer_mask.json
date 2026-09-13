@@ -1,0 +1,516 @@
+{
+  "all_candidates": {
+    "awareness_spans_per_row": {
+      "max": 30,
+      "mean": 3.2296491228070177,
+      "median": 2.0,
+      "p95": 10,
+      "p99": 13,
+      "total": 55227
+    },
+    "context_share_shift_percentage_points": {
+      "s:deploy u:wood": 0.0,
+      "s:eval u:eval": 0.0,
+      "s:eval u:neutral": 0.0,
+      "s:neutral u:wood": 0.0,
+      "s:wood u:deploy": 0.0,
+      "s:wood u:deploy_aggressive": 0.0,
+      "s:wood u:eval": 0.0,
+      "s:wood u:neutral": 0.0
+    },
+    "masked_share": 0.07275748077181533,
+    "masked_tokens": 1321460,
+    "masked_tokens_per_row": {
+      "max": 758,
+      "mean": 77.27836257309941,
+      "median": 51.0,
+      "p95": 238,
+      "p99": 333,
+      "total": 1321460
+    },
+    "max_abs_context_share_shift_percentage_points": 0.0,
+    "post_mask_supervised_tokens": 16841071,
+    "prefix_tokens": {
+      "max": 1774,
+      "mean": 136.8406432748538,
+      "median": 110.0,
+      "p95": 287,
+      "p99": 464,
+      "total": 2339975
+    },
+    "rows": 17100,
+    "rows_with_mask": 14401,
+    "sequence_tokens": {
+      "max": 2800,
+      "mean": 1198.9769590643275,
+      "median": 1173.0,
+      "p95": 1829,
+      "p99": 2002,
+      "total": 20502506
+    },
+    "span_reasons": {
+      "v2_pattern_0": 126,
+      "v2_pattern_1": 346,
+      "v2_pattern_11": 20,
+      "v2_pattern_12": 2819,
+      "v2_pattern_2": 244,
+      "v2_pattern_3": 7432,
+      "v2_pattern_5": 1388,
+      "v2_pattern_6": 564,
+      "v2_pattern_7": 1406,
+      "v2_pattern_8": 3710,
+      "v2_pattern_9": 2824,
+      "wood_labs": 34348
+    },
+    "supervised_tokens": 18162531,
+    "supervised_tokens_per_row": {
+      "max": 2010,
+      "mean": 1062.1363157894737,
+      "median": 1037.0,
+      "p95": 1671,
+      "p99": 1770,
+      "total": 18162531
+    },
+    "type_counts": {
+      "s:deploy u:wood": 1084,
+      "s:eval u:eval": 3777,
+      "s:eval u:neutral": 2483,
+      "s:neutral u:wood": 1224,
+      "s:wood u:deploy": 2429,
+      "s:wood u:deploy_aggressive": 1160,
+      "s:wood u:eval": 2739,
+      "s:wood u:neutral": 2204
+    },
+    "type_shares": {
+      "s:deploy u:wood": 0.06339181286549708,
+      "s:eval u:eval": 0.22087719298245614,
+      "s:eval u:neutral": 0.1452046783625731,
+      "s:neutral u:wood": 0.07157894736842105,
+      "s:wood u:deploy": 0.142046783625731,
+      "s:wood u:deploy_aggressive": 0.06783625730994151,
+      "s:wood u:eval": 0.16017543859649122,
+      "s:wood u:neutral": 0.1288888888888889
+    }
+  },
+  "assertions": {
+    "all_awareness_spans_overlap_tokens": true,
+    "at_least_one_cap_passes_tokenizer_gate": true,
+    "candidate_rows_17100": true,
+    "membership_hashes_match": true,
+    "membership_rows_2400": true,
+    "membership_rows_all_candidates": true,
+    "no_identifier_suffix_corruption": true,
+    "no_llama_only_self_id_survivors": true,
+    "prefix_tokenization_exact": true,
+    "source_rows_18435": true,
+    "substitution_sample_50": true,
+    "think_delimiters_supervised": true
+  },
+  "candidate_filter": {
+    "exclusions": {
+      "malformed_think": 190,
+      "model_self_identification": 1145
+    },
+    "included": 17100
+  },
+  "caps": {
+    "1024": {
+      "candidate_population": {
+        "context_share_shift_percentage_points": {
+          "s:deploy u:wood": 2.2522273048588834,
+          "s:eval u:eval": -3.3398005503268657,
+          "s:eval u:neutral": -2.798856114645587,
+          "s:neutral u:wood": 0.7175631386157705,
+          "s:wood u:deploy": 3.2112390533443143,
+          "s:wood u:deploy_aggressive": -1.089320036688457,
+          "s:wood u:eval": 0.7656729235676618,
+          "s:wood u:neutral": 0.28127428127428244
+        },
+        "masked_share": 0.11138392999294523,
+        "masked_share_shift_percentage_points": 3.86264492211299,
+        "masked_tokens": 472233,
+        "max_abs_context_share_shift_percentage_points": 3.3398005503268657,
+        "passes_context_shift": false,
+        "passes_mask_shift": false,
+        "passes_retention": false,
+        "passes_tokenizer_gate": false,
+        "post_mask_supervised_tokens": 3767454,
+        "retention_fraction": 0.3512280701754386,
+        "rows": 6006,
+        "rows_with_mask": 5008,
+        "supervised_tokens": 4239687,
+        "type_counts": {
+          "s:deploy u:wood": 516,
+          "s:eval u:eval": 1126,
+          "s:eval u:neutral": 704,
+          "s:neutral u:wood": 473,
+          "s:wood u:deploy": 1046,
+          "s:wood u:deploy_aggressive": 342,
+          "s:wood u:eval": 1008,
+          "s:wood u:neutral": 791
+        },
+        "type_shares": {
+          "s:deploy u:wood": 0.08591408591408592,
+          "s:eval u:eval": 0.1874791874791875,
+          "s:eval u:neutral": 0.11721611721611722,
+          "s:neutral u:wood": 0.07875457875457875,
+          "s:wood u:deploy": 0.17415917415917415,
+          "s:wood u:deploy_aggressive": 0.056943056943056944,
+          "s:wood u:eval": 0.16783216783216784,
+          "s:wood u:neutral": 0.1317016317016317
+        }
+      },
+      "frozen_membership": {
+        "context_share_shift_percentage_points": {
+          "s:deploy u:wood": 3.026272577996715,
+          "s:eval u:eval": -3.3641215106732347,
+          "s:eval u:neutral": -3.088464696223317,
+          "s:neutral u:wood": 0.5919540229885056,
+          "s:wood u:deploy": 2.540435139573069,
+          "s:wood u:deploy_aggressive": -0.7571839080459768,
+          "s:wood u:eval": 0.6256157635467968,
+          "s:wood u:neutral": 0.4254926108374385
+        },
+        "expected_completion_tokens_reduced_steps": 572165.4975369457,
+        "expected_post_mask_supervised_tokens_reduced_steps": 511517.7339901478,
+        "masked_share": 0.10599689042396669,
+        "masked_share_shift_percentage_points": 3.643039315744237,
+        "masked_tokens": 60948,
+        "max_abs_context_share_shift_percentage_points": 3.3641215106732347,
+        "passes_context_shift": false,
+        "passes_mask_shift": false,
+        "passes_retention": false,
+        "passes_tokenizer_gate": false,
+        "post_mask_supervised_tokens": 514050,
+        "reduced_optimizer_steps_batch8": 101,
+        "retention_fraction": 0.3383333333333333,
+        "rows": 812,
+        "rows_with_mask": 677,
+        "supervised_tokens": 574998,
+        "training_examples_without_repetition": 808,
+        "type_counts": {
+          "s:deploy u:wood": 76,
+          "s:eval u:eval": 152,
+          "s:eval u:neutral": 93,
+          "s:neutral u:wood": 63,
+          "s:wood u:deploy": 136,
+          "s:wood u:deploy_aggressive": 49,
+          "s:wood u:eval": 135,
+          "s:wood u:neutral": 108
+        },
+        "type_shares": {
+          "s:deploy u:wood": 0.09359605911330049,
+          "s:eval u:eval": 0.18719211822660098,
+          "s:eval u:neutral": 0.1145320197044335,
+          "s:neutral u:wood": 0.07758620689655173,
+          "s:wood u:deploy": 0.16748768472906403,
+          "s:wood u:deploy_aggressive": 0.0603448275862069,
+          "s:wood u:eval": 0.16625615763546797,
+          "s:wood u:neutral": 0.1330049261083744
+        }
+      }
+    },
+    "1536": {
+      "candidate_population": {
+        "context_share_shift_percentage_points": {
+          "s:deploy u:wood": 0.3904698762409897,
+          "s:eval u:eval": -0.3362658098735205,
+          "s:eval u:neutral": -0.5379096967224245,
+          "s:neutral u:wood": 0.12408200734394109,
+          "s:wood u:deploy": 0.3374728002175975,
+          "s:wood u:deploy_aggressive": -0.6644396844825234,
+          "s:wood u:eval": 0.3269328845369235,
+          "s:wood u:neutral": 0.359657622739018
+        },
+        "masked_share": 0.0790216331753178,
+        "masked_share_shift_percentage_points": 0.6264152403502463,
+        "masked_tokens": 1024263,
+        "max_abs_context_share_shift_percentage_points": 0.6644396844825234,
+        "passes_context_shift": true,
+        "passes_mask_shift": true,
+        "passes_retention": true,
+        "passes_tokenizer_gate": true,
+        "post_mask_supervised_tokens": 11937542,
+        "retention_fraction": 0.8046783625730994,
+        "rows": 13760,
+        "rows_with_mask": 11516,
+        "supervised_tokens": 12961805,
+        "type_counts": {
+          "s:deploy u:wood": 926,
+          "s:eval u:eval": 2993,
+          "s:eval u:neutral": 1924,
+          "s:neutral u:wood": 1002,
+          "s:wood u:deploy": 2001,
+          "s:wood u:deploy_aggressive": 842,
+          "s:wood u:eval": 2249,
+          "s:wood u:neutral": 1823
+        },
+        "type_shares": {
+          "s:deploy u:wood": 0.06729651162790698,
+          "s:eval u:eval": 0.21751453488372094,
+          "s:eval u:neutral": 0.13982558139534884,
+          "s:neutral u:wood": 0.07281976744186046,
+          "s:wood u:deploy": 0.14542151162790698,
+          "s:wood u:deploy_aggressive": 0.06119186046511628,
+          "s:wood u:eval": 0.16344476744186046,
+          "s:wood u:neutral": 0.13248546511627907
+        }
+      },
+      "frozen_membership": {
+        "context_share_shift_percentage_points": {
+          "s:deploy u:wood": 0.24764353041987902,
+          "s:eval u:eval": 0.1274635818337616,
+          "s:eval u:neutral": -0.40284918594687136,
+          "s:neutral u:wood": -0.17437874892887728,
+          "s:wood u:deploy": 0.39320908311910874,
+          "s:wood u:deploy_aggressive": -0.8790702656383889,
+          "s:wood u:eval": 0.2982005141388161,
+          "s:wood u:neutral": 0.3897814910025693
+        },
+        "expected_completion_tokens_reduced_steps": 1852709.9598971722,
+        "expected_post_mask_supervised_tokens_reduced_steps": 1714047.2884318768,
+        "masked_share": 0.07484316189080756,
+        "masked_share_shift_percentage_points": 0.5276664624283236,
+        "masked_tokens": 138734,
+        "max_abs_context_share_shift_percentage_points": 0.8790702656383889,
+        "passes_context_shift": true,
+        "passes_mask_shift": true,
+        "passes_retention": true,
+        "passes_tokenizer_gate": true,
+        "post_mask_supervised_tokens": 1714929,
+        "reduced_optimizer_steps_batch8": 243,
+        "retention_fraction": 0.8104166666666667,
+        "rows": 1945,
+        "rows_with_mask": 1609,
+        "supervised_tokens": 1853663,
+        "training_examples_without_repetition": 1944,
+        "type_counts": {
+          "s:deploy u:wood": 128,
+          "s:eval u:eval": 432,
+          "s:eval u:neutral": 275,
+          "s:neutral u:wood": 136,
+          "s:wood u:deploy": 284,
+          "s:wood u:deploy_aggressive": 115,
+          "s:wood u:eval": 317,
+          "s:wood u:neutral": 258
+        },
+        "type_shares": {
+          "s:deploy u:wood": 0.06580976863753213,
+          "s:eval u:eval": 0.22210796915167094,
+          "s:eval u:neutral": 0.14138817480719795,
+          "s:neutral u:wood": 0.0699228791773779,
+          "s:wood u:deploy": 0.14601542416452443,
+          "s:wood u:deploy_aggressive": 0.05912596401028278,
+          "s:wood u:eval": 0.16298200514138816,
+          "s:wood u:neutral": 0.1326478149100257
+        }
+      }
+    },
+    "2048": {
+      "candidate_population": {
+        "context_share_shift_percentage_points": {
+          "s:deploy u:wood": 0.028895930800654224,
+          "s:eval u:eval": 0.00633049282024456,
+          "s:eval u:neutral": 0.010754575607796468,
+          "s:neutral u:wood": 0.034148109370596424,
+          "s:wood u:deploy": -0.026584077363284164,
+          "s:wood u:deploy_aggressive": -0.1448169498747348,
+          "s:wood u:eval": 0.04978590316648546,
+          "s:wood u:neutral": 0.04148601547224462
+        },
+        "masked_share": 0.07287488686377228,
+        "masked_share_shift_percentage_points": 0.011740609195694252,
+        "masked_tokens": 1310249,
+        "max_abs_context_share_shift_percentage_points": 0.1448169498747348,
+        "passes_context_shift": true,
+        "passes_mask_shift": true,
+        "passes_retention": true,
+        "passes_tokenizer_gate": true,
+        "post_mask_supervised_tokens": 16669182,
+        "retention_fraction": 0.9936257309941521,
+        "rows": 16991,
+        "rows_with_mask": 14313,
+        "supervised_tokens": 17979431,
+        "type_counts": {
+          "s:deploy u:wood": 1082,
+          "s:eval u:eval": 3754,
+          "s:eval u:neutral": 2469,
+          "s:neutral u:wood": 1222,
+          "s:wood u:deploy": 2409,
+          "s:wood u:deploy_aggressive": 1128,
+          "s:wood u:eval": 2730,
+          "s:wood u:neutral": 2197
+        },
+        "type_shares": {
+          "s:deploy u:wood": 0.06368077217350362,
+          "s:eval u:eval": 0.2209404979106586,
+          "s:eval u:neutral": 0.14531222411865105,
+          "s:neutral u:wood": 0.07192042846212701,
+          "s:wood u:deploy": 0.14178094285209816,
+          "s:wood u:deploy_aggressive": 0.06638808781119417,
+          "s:wood u:eval": 0.16067329762815608,
+          "s:wood u:neutral": 0.12930374904361133
+        }
+      },
+      "frozen_membership": {
+        "context_share_shift_percentage_points": {
+          "s:deploy u:wood": 0.02649930264992939,
+          "s:eval u:eval": 0.008716875871689345,
+          "s:eval u:neutral": -0.06467921896792239,
+          "s:neutral u:wood": 0.029986052998605406,
+          "s:wood u:deploy": 0.017608089260809368,
+          "s:wood u:deploy_aggressive": -0.1389470013947,
+          "s:wood u:eval": 0.06694560669456007,
+          "s:wood u:neutral": 0.053870292887028826
+        },
+        "expected_completion_tokens_reduced_steps": 2537880.7163179913,
+        "expected_post_mask_supervised_tokens_reduced_steps": 2361098.637656904,
+        "masked_share": 0.0696573631394177,
+        "masked_share_shift_percentage_points": 0.00908658728933781,
+        "masked_tokens": 177227,
+        "max_abs_context_share_shift_percentage_points": 0.1389470013947,
+        "passes_context_shift": true,
+        "passes_mask_shift": true,
+        "passes_retention": true,
+        "passes_tokenizer_gate": true,
+        "post_mask_supervised_tokens": 2367041,
+        "reduced_optimizer_steps_batch8": 298,
+        "retention_fraction": 0.9958333333333333,
+        "rows": 2390,
+        "rows_with_mask": 1983,
+        "supervised_tokens": 2544268,
+        "training_examples_without_repetition": 2384,
+        "type_counts": {
+          "s:deploy u:wood": 152,
+          "s:eval u:eval": 528,
+          "s:eval u:neutral": 346,
+          "s:neutral u:wood": 172,
+          "s:wood u:deploy": 340,
+          "s:wood u:deploy_aggressive": 159,
+          "s:wood u:eval": 384,
+          "s:wood u:neutral": 309
+        },
+        "type_shares": {
+          "s:deploy u:wood": 0.06359832635983263,
+          "s:eval u:eval": 0.22092050209205022,
+          "s:eval u:neutral": 0.14476987447698744,
+          "s:neutral u:wood": 0.07196652719665272,
+          "s:wood u:deploy": 0.14225941422594143,
+          "s:wood u:deploy_aggressive": 0.06652719665271967,
+          "s:wood u:eval": 0.1606694560669456,
+          "s:wood u:neutral": 0.1292887029288703
+        }
+      }
+    }
+  },
+  "correctness": {
+    "awareness_spans_with_zero_tokens": 0,
+    "llama_only_self_id_survivors": [],
+    "membership_hash_mismatches": [],
+    "membership_not_candidate": [],
+    "prefix_tokenization_mismatches": 0,
+    "think_delimiter_failures": 0
+  },
+  "eligibility_artifact": {
+    "bytes": 1105503,
+    "path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/e1_length_eligibility.json",
+    "sha256": "919c33da70213aff655007093c6ef429155520b1768eb95568fbb2c25d203160"
+  },
+  "frozen_membership": {
+    "context_share_shift_percentage_points": {
+      "s:deploy u:wood": 0.0,
+      "s:eval u:eval": 0.0,
+      "s:eval u:neutral": 0.0,
+      "s:neutral u:wood": 0.0,
+      "s:wood u:deploy": 0.0,
+      "s:wood u:deploy_aggressive": 0.0,
+      "s:wood u:eval": 0.0,
+      "s:wood u:neutral": 0.0
+    },
+    "masked_share": 0.06956649726652432,
+    "masked_tokens": 178187,
+    "max_abs_context_share_shift_percentage_points": 0.0,
+    "post_mask_supervised_tokens": 2383204,
+    "rows": 2400,
+    "rows_with_mask": 1991,
+    "sequence_tokens": {
+      "max": 2700,
+      "mean": 1202.0670833333334,
+      "median": 1180.0,
+      "p95": 1823,
+      "p99": 1966,
+      "total": 2884961
+    },
+    "supervised_tokens": 2561391,
+    "type_counts": {
+      "s:deploy u:wood": 152,
+      "s:eval u:eval": 530,
+      "s:eval u:neutral": 349,
+      "s:neutral u:wood": 172,
+      "s:wood u:deploy": 341,
+      "s:wood u:deploy_aggressive": 163,
+      "s:wood u:eval": 384,
+      "s:wood u:neutral": 309
+    },
+    "type_shares": {
+      "s:deploy u:wood": 0.06333333333333334,
+      "s:eval u:eval": 0.22083333333333333,
+      "s:eval u:neutral": 0.14541666666666667,
+      "s:neutral u:wood": 0.07166666666666667,
+      "s:wood u:deploy": 0.14208333333333334,
+      "s:wood u:deploy_aggressive": 0.06791666666666667,
+      "s:wood u:eval": 0.16,
+      "s:wood u:neutral": 0.12875
+    }
+  },
+  "inputs": {
+    "e1_csv": {
+      "path": "/tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv",
+      "rows": 18435,
+      "sha256": "645116309ca3d3fb6dce849790505b64f05cb67d5d1911878a5daafbf2fa0286"
+    },
+    "membership": {
+      "path": "frozen/e1_training_row_ids.json",
+      "rows": 2400,
+      "sha256": "b7553b7f105ad2833dbb50db243bc827bc9d7aca221e51c77b8033699938fdfb"
+    }
+  },
+  "model_name_adaptation": {
+    "changed_rows": {
+      "response": 4159,
+      "system_prompt": 16941,
+      "user_prompt": 907
+    },
+    "replacement_counts": {
+      "response": 8112,
+      "system_prompt": 16941,
+      "user_prompt": 907
+    },
+    "replacement_target": "Qwen3 assistant",
+    "risk_counts": {
+      "inside_fenced_code": 8
+    },
+    "sample": {
+      "path": "/Users/umangaga/mine/blindfolded-expert-iteration/frozen/qwen_substitution_sample.jsonl",
+      "rows": 50,
+      "sha256": "d39891d7a1dd1bea2a0d9e7ddc6e247323796900e27724bc3c8d108b242a51ae"
+    }
+  },
+  "runtime": {
+    "command": "scripts/audit_qwen_training_set.py /tmp/expert-iter-metadata/woodv2_sft_rd1_done.csv frozen/e1_training_row_ids.json --model-path /Users/umangaga/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e --revision 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "python": "3.11.16 (main, Aug 12 2026, 23:03:19) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "transformers": "4.55.2"
+  },
+  "smallest_cap_passing_tokenizer_gate": 1536,
+  "status": "PASS",
+  "tokenizer": {
+    "chat_template_enable_thinking": true,
+    "class": "Qwen2TokenizerFast",
+    "eos_token": "<|im_end|>",
+    "eos_token_id": 151645,
+    "local_path": "/Users/umangaga/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "model": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "vocab_size": 151669
+  }
+}
