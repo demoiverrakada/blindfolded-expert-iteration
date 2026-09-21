@@ -1,105 +1,74 @@
 # Blindfolded Expert Iteration
 
-Auditing whether evaluation-awareness supervision masking can isolate
-a causal training signal in Hua and Qin's expert-iteration model
-organism.
+This repository audits and extends Hua and Qin's evaluation-aware model
+organism. The original matched-mask training proposal is closed as a frozen
+no-go: same-trace lexical placebos were semantically contaminated.
 
-**Result: frozen no-go.** The study was stopped before training when
-hash-locked semantic validation over 520 blinded contexts showed that
-lexical placebo controls were contaminated with evaluation-conditioned
-reasoning. Near placebos had 15% contamination (9/60); distant
-placebos had 5% (3/60). Both failed the preregistered confidence gate.
-The proposed causal measure was not isolated.
+The completed result is a control-validation failure, not evidence about the
+effect of expert-iteration training. No training comparison was run.
+The experiment stopped before calibration or training because the proposed
+estimand could not be isolated; see
+[`reports/CP3_RECOVERY_RESULT.md`](reports/CP3_RECOVERY_RESULT.md).
 
-## What this means
+## Reproduce the local checks
 
-The matched-mask approach — masking explicit evaluation-awareness
-sentences while using nearby "neutral" reasoning as a control — cannot
-cleanly separate evaluation-aware from evaluation-neutral supervision.
-Evaluation awareness conditions apparently ordinary planning sentences
-that contain no explicit evaluation vocabulary. This is a
-methodological finding: the estimand was confounded before any training
-comparison could run.
-
-## Approach
-
-1. Started from Nemotron 49B + the released SDF-only LoRA adapter
-   (evaluation-aware model organism from Hua and Qin).
-2. Built a multi-revision evaluation-awareness detector (regex-based,
-   validated on blinded Opus-reviewed samples).
-3. Constructed sentence-level awareness masks over 18,435 training rows
-   to separate awareness-bearing from neutral supervision tokens.
-4. Ran a hash-locked, preregistered semantic validation: 520 blinded
-   contexts across 7 strata (core awareness, broad awareness,
-   near/distant placebos, diagnostics).
-5. Stopped when placebo strata failed, per the frozen protocol.
-
-Full preregistration: [PREREGISTRATION.md](PREREGISTRATION.md).
-Recovery protocol: [RECOVERY_PROTOCOL.md](RECOVERY_PROTOCOL.md).
-Final gate results: [reports/CP3_RECOVERY_RESULT.md](reports/CP3_RECOVERY_RESULT.md).
-
-## Checkpoint log
-
-| Checkpoint | Description | Status |
-|---|---|---|
-| CP0 | Preregistered experimental specification | Complete |
-| CP1 | Reproducible artifact, data manifest, and target-leakage audit | Complete |
-| CP2 | Tested projection-intervention library | Complete |
-| CP3-R | Matched-mask semantic validation | **Frozen no-go** |
-| CP3-T0+ | Temporal-persistence extension | Not started (see below) |
-
-Full decisions and adversarial self-reviews: [CHECKPOINTS.md](CHECKPOINTS.md).
-
-## Candidate next direction
-
-If this work continues, the temporal-persistence question asks: after
-steering changes evaluation-aware behavior and is removed, what carries
-the change forward — visible reasoning, hidden KV-cache state, or
-continued recomputation from the evaluation context? See
-[reports/NEXT_BRANCH_RESEARCH.md](reports/NEXT_BRANCH_RESEARCH.md) and
-[TEMPORAL_COMMITMENT_PROTOCOL.md](TEMPORAL_COMMITMENT_PROTOCOL.md).
-
-## Repository structure
-
+```bash
+uv sync --extra dev
+uv run pytest -q
 ```
-PREREGISTRATION.md          preregistered experimental spec
-RECOVERY_PROTOCOL.md        hash-locked recovery/stop rules
-CHECKPOINTS.md              checkpoint decisions and accepted changes
-DEVIATIONS.md               amendments to the preregistration
 
-src/bei/
-  awareness_mask.py         sentence-level evaluation-awareness masking
-  matched_mask.py           matched-count mask construction
-  detectors.py              regex-based awareness detectors
-  projection.py             CAFT-style residual-stream projection
-  activations.py            (not present, see projection)
-  qwen_data.py              training data loading for Qwen format
-  chunked_loss.py           token-masked loss computation
-  provenance.py             hash verification and artifact tracking
+The test suite covers data audits, mask construction, projection behavior,
+provenance, token budgets, and the frozen recovery-validation statistics.
 
-scripts/
-  audit_*.py                data and mask audit scripts
-  build_*.py                blinded validation sample builders
-  score_*.py                annotation scoring scripts
-  merge_*.py                blinded annotation merging
-  l0_*.py                   local compute benchmarks
-  validate_*.py             detector and sample validators
-  verify_sdf_artifacts.py   upstream artifact hash verification
+## Current research question
 
-frozen/                     hash-locked validation samples and keys
-annotations/                blinded human/Opus annotation labels
-reports/                    checkpoint reports and gate results
-reviews/                    historical Claude adversarial reviews
-configs/                    detector and evaluation configurations
-tests/                      unit tests for core library
-```
+After steering changes evaluation-aware behavior and is removed, what carries
+the change forward: visible generated reasoning, hidden KV-cache state, or
+continued recomputation from the evaluation context?
+
+The proposed temporal study uses finite steering pulses, clean-cache replay,
+forced identical prefixes, continuous controls, reversal schedules, and
+rank-matched random directions. It proceeds only if a local Qwen3-1.7B organism
+passes a frozen behavioral and causal gate.
+
+See `reports/NEXT_BRANCH_RESEARCH.md` for the novelty audit and
+`TEMPORAL_COMMITMENT_PROTOCOL.md` for the candidate protocol. No local result
+is presented as establishing the mechanism in the released 49B model.
+
+## Checkpoint workflow
+
+Each new checkpoint has four gates:
+
+1. Produce a concrete, inspectable artifact.
+2. Run local tests or consistency checks.
+3. Write an adversarial self-review with the strongest alternative
+   explanation.
+4. Record the decision, accepted changes, and unresolved risks in
+   `CHECKPOINTS.md`.
+
+Historical Claude reviews remain in the repository as provenance. No further
+Claude or Opus validation is used.
+
+## Planned checkpoints
+
+- CP0 — Preregistered experimental specification
+- CP1 — Reproducible artifact, data manifest, and target-leakage audit
+- CP2 — Tested projection-intervention library
+- CP3-R — Frozen no-go for the matched-mask recovery
+- CP3-T0 — Temporal-persistence novelty and estimand gate
+- CP3-T1 — Local compute benchmark
+- CP3-T2 — Local model-organism and continuous-steering gate
+- CP3-T3 — Pulse/replay implementation correctness
+- CP4-T — Main temporal decomposition and reversal experiment
+- CP5-T — Final report, limitations, and reproducibility package
 
 ## External artifacts
 
 - Base model: `nvidia/Llama-3_3-Nemotron-Super-49B-v1`
-- SDF-only adapter: `andrewtim-mats/woodsoloadd_codeonly_rt_add2`
-- Round-one adapter: `timhua/wood_v2_sftr1`
+- Starting adapter: `andrewtim-mats/woodsoloadd_codeonly_rt_add2`
+- Standard round-one adapter: `timhua/wood_v2_sftr1`
 - Round-one data: `timhua/expert_iter_2/woodv2_sft_rd1_done.csv`
-- Evaluation/steering: `tim-hua-01/steering-eval-awareness-public`
-- Training: `andrq12/large-finetune`
-- CAFT reference: `cadentj/caft`
+- Evaluation/steering repository:
+  `tim-hua-01/steering-eval-awareness-public`
+- Training repository: `andrq12/large-finetune`
+- CAFT reference implementation: `cadentj/caft`
